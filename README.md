@@ -4,4 +4,4 @@ Hello guys. This will be the repository where we will store our seneka app codes
 ## Instructions of usage:
 
 1) Download and install git: https://github.com/GitInPractice/GitInPractice/blob/master/A-GitInstallation.adoc
-2) Commit something in the file <<Hello World#HelloWorld>>
+2) Commit something in the file [HelloWorld](HelloWorld)
