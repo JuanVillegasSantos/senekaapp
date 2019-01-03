@@ -9,6 +9,6 @@ Hello guys. This will be the repository where we will store our seneka app codes
 # git config --global user.name "UserName"
 # git config --global user.email user@server.com
 
-```
+
 2) Commit something in the file [HelloWorld](HelloWorld)
 .Initializing a Git repository
