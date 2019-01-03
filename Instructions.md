@@ -7,5 +7,5 @@
 # git config --global user.name "UserName"
 # git config --global user.email user@server.com
 ``` 
-3) Commit something in the file [HelloWorld](HelloWorld)
+3) Commit something in the file [HelloWorld](HelloWorld) for me to know tour username and create branches
 
