@@ -79,7 +79,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Torre con Avión y nubes (Sin brújula) Portada" highlightedImage="Torre con Avión" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-ME-Uh6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Torre con Avión y nubes (Sin brújula) Portada" highlightedImage="Torre con Avión" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-ME-Uh6">
                                 <rect key="frame" x="53" y="518" width="268" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -118,6 +118,6 @@
     <resources>
         <image name="Captura de pantalla 2018-12-28 a la(s) 1.06.35 p. m." width="165" height="303"/>
         <image name="Torre con Avión" width="528" height="473"/>
-        <image name="Torre con Avión y nubes (Sin brújula) Portada" width="743" height="472"/>
+        <image name="Torre con Avión y nubes (Sin brújula) Portada" width="743" height="472"/>
     </resources>
 </document>
