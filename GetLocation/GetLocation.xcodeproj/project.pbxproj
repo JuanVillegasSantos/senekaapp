@@ -7,66 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
-		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
-		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
-		F750673021D11C2000576499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F750672F21D11C2000576499 /* Assets.xcassets */; };
-		F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750673121D11C2000576499 /* LaunchScreen.storyboard */; };
-		F750673E21D11C2000576499 /* SenekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750673D21D11C2000576499 /* SenekaTests.swift */; };
-		F750674921D11C2000576499 /* SenekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750674821D11C2000576499 /* SenekaUITests.swift */; };
-		F750675921D6C2A800576499 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* LogInViewController.swift */; };
+		9376AAFF220BBE7D0034EAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AAFE220BBE7D0034EAD0 /* AppDelegate.swift */; };
+		9376AB01220BBE7D0034EAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AB00220BBE7D0034EAD0 /* ViewController.swift */; };
+		9376AB04220BBE7D0034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9376AB02220BBE7D0034EAD0 /* Main.storyboard */; };
+		9376AB06220BBE7E0034EAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9376AB05220BBE7E0034EAD0 /* Assets.xcassets */; };
+		9376AB09220BBE7E0034EAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9376AB07220BBE7E0034EAD0 /* LaunchScreen.storyboard */; };
+		9376AB14220BBE7E0034EAD0 /* GetLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AB13220BBE7E0034EAD0 /* GetLocationTests.swift */; };
+		9376AB1F220BBE7E0034EAD0 /* GetLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AB1E220BBE7E0034EAD0 /* GetLocationUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F750673A21D11C2000576499 /* PBXContainerItemProxy */ = {
+		9376AB10220BBE7E0034EAD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F750671D21D11C1F00576499 /* Project object */;
+			containerPortal = 9376AAF3220BBE7D0034EAD0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F750672421D11C1F00576499;
-			remoteInfo = Seneka;
+			remoteGlobalIDString = 9376AAFA220BBE7D0034EAD0;
+			remoteInfo = GetLocation;
 		};
-		F750674521D11C2000576499 /* PBXContainerItemProxy */ = {
+		9376AB1B220BBE7E0034EAD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F750671D21D11C1F00576499 /* Project object */;
+			containerPortal = 9376AAF3220BBE7D0034EAD0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F750672421D11C1F00576499;
-			remoteInfo = Seneka;
+			remoteGlobalIDString = 9376AAFA220BBE7D0034EAD0;
+			remoteInfo = GetLocation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F750672521D11C1F00576499 /* Seneka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seneka.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F750672821D11C1F00576499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F750672A21D11C1F00576499 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		F750672D21D11C1F00576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F750672F21D11C2000576499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F750673221D11C2000576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F750673421D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F750673921D11C2000576499 /* SenekaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenekaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F750673D21D11C2000576499 /* SenekaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaTests.swift; sourceTree = "<group>"; };
-		F750673F21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F750674421D11C2000576499 /* SenekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F750674821D11C2000576499 /* SenekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaUITests.swift; sourceTree = "<group>"; };
-		F750674A21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F750675821D6C2A800576499 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		9376AAFB220BBE7D0034EAD0 /* GetLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9376AAFE220BBE7D0034EAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9376AB00220BBE7D0034EAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9376AB03220BBE7D0034EAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9376AB05220BBE7E0034EAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9376AB08220BBE7E0034EAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9376AB0A220BBE7E0034EAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9376AB0F220BBE7E0034EAD0 /* GetLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9376AB13220BBE7E0034EAD0 /* GetLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationTests.swift; sourceTree = "<group>"; };
+		9376AB15220BBE7E0034EAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9376AB1A220BBE7E0034EAD0 /* GetLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9376AB1E220BBE7E0034EAD0 /* GetLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationUITests.swift; sourceTree = "<group>"; };
+		9376AB20220BBE7E0034EAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F750672221D11C1F00576499 /* Frameworks */ = {
+		9376AAF8220BBE7D0034EAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750673621D11C2000576499 /* Frameworks */ = {
+		9376AB0C220BBE7E0034EAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750674121D11C2000576499 /* Frameworks */ = {
+		9376AB17220BBE7E0034EAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,138 +74,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F750671C21D11C1F00576499 = {
+		9376AAF2220BBE7D0034EAD0 = {
 			isa = PBXGroup;
 			children = (
-				F750672721D11C1F00576499 /* Seneka */,
-				F750673C21D11C2000576499 /* SenekaTests */,
-				F750674721D11C2000576499 /* SenekaUITests */,
-				F750672621D11C1F00576499 /* Products */,
+				9376AAFD220BBE7D0034EAD0 /* GetLocation */,
+				9376AB12220BBE7E0034EAD0 /* GetLocationTests */,
+				9376AB1D220BBE7E0034EAD0 /* GetLocationUITests */,
+				9376AAFC220BBE7D0034EAD0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F750672621D11C1F00576499 /* Products */ = {
+		9376AAFC220BBE7D0034EAD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F750672521D11C1F00576499 /* Seneka.app */,
-				F750673921D11C2000576499 /* SenekaTests.xctest */,
-				F750674421D11C2000576499 /* SenekaUITests.xctest */,
+				9376AAFB220BBE7D0034EAD0 /* GetLocation.app */,
+				9376AB0F220BBE7E0034EAD0 /* GetLocationTests.xctest */,
+				9376AB1A220BBE7E0034EAD0 /* GetLocationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F750672721D11C1F00576499 /* Seneka */ = {
+		9376AAFD220BBE7D0034EAD0 /* GetLocation */ = {
 			isa = PBXGroup;
 			children = (
-				F750672821D11C1F00576499 /* AppDelegate.swift */,
-				F750672A21D11C1F00576499 /* SignInViewController.swift */,
-				F750672C21D11C1F00576499 /* Main.storyboard */,
-				F750672F21D11C2000576499 /* Assets.xcassets */,
-				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
-				F750673421D11C2000576499 /* Info.plist */,
-				F750675821D6C2A800576499 /* LogInViewController.swift */,
+				9376AAFE220BBE7D0034EAD0 /* AppDelegate.swift */,
+				9376AB00220BBE7D0034EAD0 /* ViewController.swift */,
+				9376AB02220BBE7D0034EAD0 /* Main.storyboard */,
+				9376AB05220BBE7E0034EAD0 /* Assets.xcassets */,
+				9376AB07220BBE7E0034EAD0 /* LaunchScreen.storyboard */,
+				9376AB0A220BBE7E0034EAD0 /* Info.plist */,
 			);
-			path = Seneka;
+			path = GetLocation;
 			sourceTree = "<group>";
 		};
-		F750673C21D11C2000576499 /* SenekaTests */ = {
+		9376AB12220BBE7E0034EAD0 /* GetLocationTests */ = {
 			isa = PBXGroup;
 			children = (
-				F750673D21D11C2000576499 /* SenekaTests.swift */,
-				F750673F21D11C2000576499 /* Info.plist */,
+				9376AB13220BBE7E0034EAD0 /* GetLocationTests.swift */,
+				9376AB15220BBE7E0034EAD0 /* Info.plist */,
 			);
-			path = SenekaTests;
+			path = GetLocationTests;
 			sourceTree = "<group>";
 		};
-		F750674721D11C2000576499 /* SenekaUITests */ = {
+		9376AB1D220BBE7E0034EAD0 /* GetLocationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F750674821D11C2000576499 /* SenekaUITests.swift */,
-				F750674A21D11C2000576499 /* Info.plist */,
+				9376AB1E220BBE7E0034EAD0 /* GetLocationUITests.swift */,
+				9376AB20220BBE7E0034EAD0 /* Info.plist */,
 			);
-			path = SenekaUITests;
+			path = GetLocationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F750672421D11C1F00576499 /* Seneka */ = {
+		9376AAFA220BBE7D0034EAD0 /* GetLocation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F750674D21D11C2000576499 /* Build configuration list for PBXNativeTarget "Seneka" */;
+			buildConfigurationList = 9376AB23220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocation" */;
 			buildPhases = (
-				F750672121D11C1F00576499 /* Sources */,
-				F750672221D11C1F00576499 /* Frameworks */,
-				F750672321D11C1F00576499 /* Resources */,
+				9376AAF7220BBE7D0034EAD0 /* Sources */,
+				9376AAF8220BBE7D0034EAD0 /* Frameworks */,
+				9376AAF9220BBE7D0034EAD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Seneka;
-			productName = Seneka;
-			productReference = F750672521D11C1F00576499 /* Seneka.app */;
+			name = GetLocation;
+			productName = GetLocation;
+			productReference = 9376AAFB220BBE7D0034EAD0 /* GetLocation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F750673821D11C2000576499 /* SenekaTests */ = {
+		9376AB0E220BBE7E0034EAD0 /* GetLocationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F750675021D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaTests" */;
+			buildConfigurationList = 9376AB26220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocationTests" */;
 			buildPhases = (
-				F750673521D11C2000576499 /* Sources */,
-				F750673621D11C2000576499 /* Frameworks */,
-				F750673721D11C2000576499 /* Resources */,
+				9376AB0B220BBE7E0034EAD0 /* Sources */,
+				9376AB0C220BBE7E0034EAD0 /* Frameworks */,
+				9376AB0D220BBE7E0034EAD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F750673B21D11C2000576499 /* PBXTargetDependency */,
+				9376AB11220BBE7E0034EAD0 /* PBXTargetDependency */,
 			);
-			name = SenekaTests;
-			productName = SenekaTests;
-			productReference = F750673921D11C2000576499 /* SenekaTests.xctest */;
+			name = GetLocationTests;
+			productName = GetLocationTests;
+			productReference = 9376AB0F220BBE7E0034EAD0 /* GetLocationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F750674321D11C2000576499 /* SenekaUITests */ = {
+		9376AB19220BBE7E0034EAD0 /* GetLocationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F750675321D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaUITests" */;
+			buildConfigurationList = 9376AB29220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocationUITests" */;
 			buildPhases = (
-				F750674021D11C2000576499 /* Sources */,
-				F750674121D11C2000576499 /* Frameworks */,
-				F750674221D11C2000576499 /* Resources */,
+				9376AB16220BBE7E0034EAD0 /* Sources */,
+				9376AB17220BBE7E0034EAD0 /* Frameworks */,
+				9376AB18220BBE7E0034EAD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F750674621D11C2000576499 /* PBXTargetDependency */,
+				9376AB1C220BBE7E0034EAD0 /* PBXTargetDependency */,
 			);
-			name = SenekaUITests;
-			productName = SenekaUITests;
-			productReference = F750674421D11C2000576499 /* SenekaUITests.xctest */;
+			name = GetLocationUITests;
+			productName = GetLocationUITests;
+			productReference = 9376AB1A220BBE7E0034EAD0 /* GetLocationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F750671D21D11C1F00576499 /* Project object */ = {
+		9376AAF3220BBE7D0034EAD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Seneka Inc.";
+				ORGANIZATIONNAME = Estudiantes;
 				TargetAttributes = {
-					F750672421D11C1F00576499 = {
+					9376AAFA220BBE7D0034EAD0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					F750673821D11C2000576499 = {
+					9376AB0E220BBE7E0034EAD0 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = F750672421D11C1F00576499;
+						TestTargetID = 9376AAFA220BBE7D0034EAD0;
 					};
-					F750674321D11C2000576499 = {
+					9376AB19220BBE7E0034EAD0 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = F750672421D11C1F00576499;
+						TestTargetID = 9376AAFA220BBE7D0034EAD0;
 					};
 				};
 			};
-			buildConfigurationList = F750672021D11C1F00576499 /* Build configuration list for PBXProject "Seneka" */;
+			buildConfigurationList = 9376AAF6220BBE7D0034EAD0 /* Build configuration list for PBXProject "GetLocation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,37 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = F750671C21D11C1F00576499;
-			productRefGroup = F750672621D11C1F00576499 /* Products */;
+			mainGroup = 9376AAF2220BBE7D0034EAD0;
+			productRefGroup = 9376AAFC220BBE7D0034EAD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F750672421D11C1F00576499 /* Seneka */,
-				F750673821D11C2000576499 /* SenekaTests */,
-				F750674321D11C2000576499 /* SenekaUITests */,
+				9376AAFA220BBE7D0034EAD0 /* GetLocation */,
+				9376AB0E220BBE7E0034EAD0 /* GetLocationTests */,
+				9376AB19220BBE7E0034EAD0 /* GetLocationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F750672321D11C1F00576499 /* Resources */ = {
+		9376AAF9220BBE7D0034EAD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */,
-				F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */,
-				F750673021D11C2000576499 /* Assets.xcassets in Resources */,
+				9376AB09220BBE7E0034EAD0 /* LaunchScreen.storyboard in Resources */,
+				9376AB06220BBE7E0034EAD0 /* Assets.xcassets in Resources */,
+				9376AB04220BBE7D0034EAD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750673721D11C2000576499 /* Resources */ = {
+		9376AB0D220BBE7E0034EAD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750674221D11C2000576499 /* Resources */ = {
+		9376AB18220BBE7E0034EAD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,60 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F750672121D11C1F00576499 /* Sources */ = {
+		9376AAF7220BBE7D0034EAD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
-				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
-				F750675921D6C2A800576499 /* LogInViewController.swift in Sources */,
+				9376AB01220BBE7D0034EAD0 /* ViewController.swift in Sources */,
+				9376AAFF220BBE7D0034EAD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750673521D11C2000576499 /* Sources */ = {
+		9376AB0B220BBE7E0034EAD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F750673E21D11C2000576499 /* SenekaTests.swift in Sources */,
+				9376AB14220BBE7E0034EAD0 /* GetLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F750674021D11C2000576499 /* Sources */ = {
+		9376AB16220BBE7E0034EAD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F750674921D11C2000576499 /* SenekaUITests.swift in Sources */,
+				9376AB1F220BBE7E0034EAD0 /* GetLocationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F750673B21D11C2000576499 /* PBXTargetDependency */ = {
+		9376AB11220BBE7E0034EAD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F750672421D11C1F00576499 /* Seneka */;
-			targetProxy = F750673A21D11C2000576499 /* PBXContainerItemProxy */;
+			target = 9376AAFA220BBE7D0034EAD0 /* GetLocation */;
+			targetProxy = 9376AB10220BBE7E0034EAD0 /* PBXContainerItemProxy */;
 		};
-		F750674621D11C2000576499 /* PBXTargetDependency */ = {
+		9376AB1C220BBE7E0034EAD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F750672421D11C1F00576499 /* Seneka */;
-			targetProxy = F750674521D11C2000576499 /* PBXContainerItemProxy */;
+			target = 9376AAFA220BBE7D0034EAD0 /* GetLocation */;
+			targetProxy = 9376AB1B220BBE7E0034EAD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F750672C21D11C1F00576499 /* Main.storyboard */ = {
+		9376AB02220BBE7D0034EAD0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F750672D21D11C1F00576499 /* Base */,
+				9376AB03220BBE7D0034EAD0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F750673121D11C2000576499 /* LaunchScreen.storyboard */ = {
+		9376AB07220BBE7E0034EAD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F750673221D11C2000576499 /* Base */,
+				9376AB08220BBE7E0034EAD0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F750674B21D11C2000576499 /* Debug */ = {
+		9376AB21220BBE7E0034EAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		F750674C21D11C2000576499 /* Release */ = {
+		9376AB22220BBE7E0034EAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,160 +428,158 @@
 			};
 			name = Release;
 		};
-		F750674E21D11C2000576499 /* Debug */ = {
+		9376AB24220BBE7E0034EAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADARLC8T7J;
-				INFOPLIST_FILE = Seneka/Info.plist;
+				INFOPLIST_FILE = GetLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.Seneka;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F750674F21D11C2000576499 /* Release */ = {
+		9376AB25220BBE7E0034EAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADARLC8T7J;
-				INFOPLIST_FILE = Seneka/Info.plist;
+				INFOPLIST_FILE = GetLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.Seneka;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F750675121D11C2000576499 /* Debug */ = {
+		9376AB27220BBE7E0034EAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SenekaTests/Info.plist;
+				INFOPLIST_FILE = GetLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seneka.app/Seneka";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetLocation.app/GetLocation";
 			};
 			name = Debug;
 		};
-		F750675221D11C2000576499 /* Release */ = {
+		9376AB28220BBE7E0034EAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SenekaTests/Info.plist;
+				INFOPLIST_FILE = GetLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seneka.app/Seneka";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetLocation.app/GetLocation";
 			};
 			name = Release;
 		};
-		F750675421D11C2000576499 /* Debug */ = {
+		9376AB2A220BBE7E0034EAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SenekaUITests/Info.plist;
+				INFOPLIST_FILE = GetLocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Seneka;
+				TEST_TARGET_NAME = GetLocation;
 			};
 			name = Debug;
 		};
-		F750675521D11C2000576499 /* Release */ = {
+		9376AB2B220BBE7E0034EAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SenekaUITests/Info.plist;
+				INFOPLIST_FILE = GetLocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = senekaapp.GetLocationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Seneka;
+				TEST_TARGET_NAME = GetLocation;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F750672021D11C1F00576499 /* Build configuration list for PBXProject "Seneka" */ = {
+		9376AAF6220BBE7D0034EAD0 /* Build configuration list for PBXProject "GetLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F750674B21D11C2000576499 /* Debug */,
-				F750674C21D11C2000576499 /* Release */,
+				9376AB21220BBE7E0034EAD0 /* Debug */,
+				9376AB22220BBE7E0034EAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F750674D21D11C2000576499 /* Build configuration list for PBXNativeTarget "Seneka" */ = {
+		9376AB23220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F750674E21D11C2000576499 /* Debug */,
-				F750674F21D11C2000576499 /* Release */,
+				9376AB24220BBE7E0034EAD0 /* Debug */,
+				9376AB25220BBE7E0034EAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F750675021D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaTests" */ = {
+		9376AB26220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F750675121D11C2000576499 /* Debug */,
-				F750675221D11C2000576499 /* Release */,
+				9376AB27220BBE7E0034EAD0 /* Debug */,
+				9376AB28220BBE7E0034EAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F750675321D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaUITests" */ = {
+		9376AB29220BBE7E0034EAD0 /* Build configuration list for PBXNativeTarget "GetLocationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F750675421D11C2000576499 /* Debug */,
-				F750675521D11C2000576499 /* Release */,
+				9376AB2A220BBE7E0034EAD0 /* Debug */,
+				9376AB2B220BBE7E0034EAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F750671D21D11C1F00576499 /* Project object */;
+	rootObject = 9376AAF3220BBE7D0034EAD0 /* Project object */;
 }
