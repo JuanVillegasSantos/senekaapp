@@ -14,7 +14,7 @@
 		F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750673121D11C2000576499 /* LaunchScreen.storyboard */; };
 		F750673E21D11C2000576499 /* SenekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750673D21D11C2000576499 /* SenekaTests.swift */; };
 		F750674921D11C2000576499 /* SenekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750674821D11C2000576499 /* SenekaUITests.swift */; };
-		F750675921D6C2A800576499 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* LogInViewController.swift */; };
+		F750675921D6C2A800576499 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* SalesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		F750674421D11C2000576499 /* SenekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F750674821D11C2000576499 /* SenekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaUITests.swift; sourceTree = "<group>"; };
 		F750674A21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F750675821D6C2A800576499 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F750675821D6C2A800576499 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				F750672821D11C1F00576499 /* AppDelegate.swift */,
 				F750672A21D11C1F00576499 /* SignInViewController.swift */,
+				F750675821D6C2A800576499 /* SalesViewController.swift */,
 				F750672C21D11C1F00576499 /* Main.storyboard */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
 				F750673421D11C2000576499 /* Info.plist */,
-				F750675821D6C2A800576499 /* LogInViewController.swift */,
 			);
 			path = Seneka;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			files = (
 				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
 				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
-				F750675921D6C2A800576499 /* LogInViewController.swift in Sources */,
+				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SignInViewController: UIViewController {
+    
+    @IBAction func SignInButton(_ sender: Any) {
+        print("Button pressed")
+        self.performSegue(withIdentifier: "SalesViewSergue", sender: self)
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("view has loaded :)")
+        print("View has loaded")
+        
+        
     }
 
 
