@@ -14,6 +14,7 @@
 		9376AB09220BBE7E0034EAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9376AB07220BBE7E0034EAD0 /* LaunchScreen.storyboard */; };
 		9376AB14220BBE7E0034EAD0 /* GetLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AB13220BBE7E0034EAD0 /* GetLocationTests.swift */; };
 		9376AB1F220BBE7E0034EAD0 /* GetLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AB1E220BBE7E0034EAD0 /* GetLocationUITests.swift */; };
+		DEB099712210D4B400F86520 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB099702210D4B400F86520 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9376AB1A220BBE7E0034EAD0 /* GetLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9376AB1E220BBE7E0034EAD0 /* GetLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationUITests.swift; sourceTree = "<group>"; };
 		9376AB20220BBE7E0034EAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB099702210D4B400F86520 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB099712210D4B400F86520 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				9376AB12220BBE7E0034EAD0 /* GetLocationTests */,
 				9376AB1D220BBE7E0034EAD0 /* GetLocationUITests */,
 				9376AAFC220BBE7D0034EAD0 /* Products */,
+				DEB0996F2210D4B400F86520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				9376AB20220BBE7E0034EAD0 /* Info.plist */,
 			);
 			path = GetLocationUITests;
+			sourceTree = "<group>";
+		};
+		DEB0996F2210D4B400F86520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEB099702210D4B400F86520 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADARLC8T7J;
 				INFOPLIST_FILE = GetLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADARLC8T7J;
 				INFOPLIST_FILE = GetLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +482,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = senekaapp;
 				INFOPLIST_FILE = GetLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +503,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = senekaapp;
 				INFOPLIST_FILE = GetLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = senekaapp;
 				INFOPLIST_FILE = GetLocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +543,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = senekaapp;
 				INFOPLIST_FILE = GetLocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
