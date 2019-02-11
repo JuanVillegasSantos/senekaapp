@@ -18,6 +18,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DEB0998522111A7000F86520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9376AAFB220BBE7D0034EAD0;
+			remoteInfo = GetLocation;
+		};
+		DEB0998722111A7000F86520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9376AB0F220BBE7E0034EAD0;
+			remoteInfo = GetLocationTests;
+		};
+		DEB0998922111A7000F86520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9376AB1A220BBE7E0034EAD0;
+			remoteInfo = GetLocationUITests;
+		};
 		F750673A21D11C2000576499 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F750671D21D11C1F00576499 /* Project object */;
@@ -35,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GetLocation.xcodeproj; path = ../../GetLocation/GetLocation.xcodeproj; sourceTree = "<group>"; };
 		F750672521D11C1F00576499 /* Seneka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seneka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F750672821D11C1F00576499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F750672A21D11C1F00576499 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEB0998022111A7000F86520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0998622111A7000F86520 /* GetLocation.app */,
+				DEB0998822111A7000F86520 /* GetLocationTests.xctest */,
+				DEB0998A22111A7000F86520 /* GetLocationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F750671C21D11C1F00576499 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,7 @@
 				F750673C21D11C2000576499 /* SenekaTests */,
 				F750674721D11C2000576499 /* SenekaUITests */,
 				F750672621D11C1F00576499 /* Products */,
+				DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +251,12 @@
 			mainGroup = F750671C21D11C1F00576499;
 			productRefGroup = F750672621D11C1F00576499 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DEB0998022111A7000F86520 /* Products */;
+					ProjectRef = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F750672421D11C1F00576499 /* Seneka */,
@@ -226,6 +265,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DEB0998622111A7000F86520 /* GetLocation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GetLocation.app;
+			remoteRef = DEB0998522111A7000F86520 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEB0998822111A7000F86520 /* GetLocationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GetLocationTests.xctest;
+			remoteRef = DEB0998722111A7000F86520 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEB0998A22111A7000F86520 /* GetLocationUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GetLocationUITests.xctest;
+			remoteRef = DEB0998922111A7000F86520 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F750672321D11C1F00576499 /* Resources */ = {
