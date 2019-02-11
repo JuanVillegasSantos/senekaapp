@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
 		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
 		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
-		F750672E21D11C1F00576499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
 		F750673021D11C2000576499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F750672F21D11C2000576499 /* Assets.xcassets */; };
 		F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750673121D11C2000576499 /* LaunchScreen.storyboard */; };
 		F750673E21D11C2000576499 /* SenekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750673D21D11C2000576499 /* SenekaTests.swift */; };
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */,
 				F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */,
 				F750673021D11C2000576499 /* Assets.xcassets in Resources */,
-				F750672E21D11C1F00576499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
