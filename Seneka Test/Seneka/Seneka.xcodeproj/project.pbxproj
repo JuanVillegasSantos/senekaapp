@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
+		930744A4221258080054899D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930744A3221258080054899D /* ViewController.swift */; };
 		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
 		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
 		F750673021D11C2000576499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F750672F21D11C2000576499 /* Assets.xcassets */; };
@@ -18,26 +18,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DEB0998522111A7000F86520 /* PBXContainerItemProxy */ = {
+		9307449722124F7F0054899D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			containerPortal = 9307449122124F7F0054899D /* GetLocation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9376AAFB220BBE7D0034EAD0;
 			remoteInfo = GetLocation;
 		};
-		DEB0998722111A7000F86520 /* PBXContainerItemProxy */ = {
+		9307449922124F7F0054899D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			containerPortal = 9307449122124F7F0054899D /* GetLocation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9376AB0F220BBE7E0034EAD0;
 			remoteInfo = GetLocationTests;
 		};
-		DEB0998922111A7000F86520 /* PBXContainerItemProxy */ = {
+		9307449B22124F7F0054899D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+			containerPortal = 9307449122124F7F0054899D /* GetLocation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9376AB1A220BBE7E0034EAD0;
 			remoteInfo = GetLocationUITests;
+		};
+		9307449D22124F840054899D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9307449122124F7F0054899D /* GetLocation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9376AAFA220BBE7D0034EAD0;
+			remoteInfo = GetLocation;
 		};
 		F750673A21D11C2000576499 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,11 +63,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GetLocation.xcodeproj; path = ../../GetLocation/GetLocation.xcodeproj; sourceTree = "<group>"; };
+		9307449122124F7F0054899D /* GetLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GetLocation.xcodeproj; path = ../../GetLocation/GetLocation.xcodeproj; sourceTree = "<group>"; };
+		9307449F221250220054899D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		930744A3221258080054899D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F750672521D11C1F00576499 /* Seneka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seneka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F750672821D11C1F00576499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F750672A21D11C1F00576499 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		F750672D21D11C1F00576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F750672F21D11C2000576499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F750673221D11C2000576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F750673421D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,12 +106,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DEB0998022111A7000F86520 /* Products */ = {
+		9307449222124F7F0054899D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEB0998622111A7000F86520 /* GetLocation.app */,
-				DEB0998822111A7000F86520 /* GetLocationTests.xctest */,
-				DEB0998A22111A7000F86520 /* GetLocationUITests.xctest */,
+				9307449822124F7F0054899D /* GetLocation.app */,
+				9307449A22124F7F0054899D /* GetLocationTests.xctest */,
+				9307449C22124F7F0054899D /* GetLocationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +123,7 @@
 				F750673C21D11C2000576499 /* SenekaTests */,
 				F750674721D11C2000576499 /* SenekaUITests */,
 				F750672621D11C1F00576499 /* Products */,
-				DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */,
+				9307449122124F7F0054899D /* GetLocation.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,10 +140,11 @@
 		F750672721D11C1F00576499 /* Seneka */ = {
 			isa = PBXGroup;
 			children = (
+				930744A3221258080054899D /* ViewController.swift */,
 				F750672821D11C1F00576499 /* AppDelegate.swift */,
 				F750672A21D11C1F00576499 /* SignInViewController.swift */,
 				F750675821D6C2A800576499 /* SalesViewController.swift */,
-				F750672C21D11C1F00576499 /* Main.storyboard */,
+				930744A0221250220054899D /* Main.storyboard */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
 				F750673421D11C2000576499 /* Info.plist */,
@@ -175,6 +184,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9307449E22124F840054899D /* PBXTargetDependency */,
 			);
 			name = Seneka;
 			productName = Seneka;
@@ -253,8 +263,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DEB0998022111A7000F86520 /* Products */;
-					ProjectRef = DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */;
+					ProductGroup = 9307449222124F7F0054899D /* Products */;
+					ProjectRef = 9307449122124F7F0054899D /* GetLocation.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -267,25 +277,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DEB0998622111A7000F86520 /* GetLocation.app */ = {
+		9307449822124F7F0054899D /* GetLocation.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = GetLocation.app;
-			remoteRef = DEB0998522111A7000F86520 /* PBXContainerItemProxy */;
+			remoteRef = 9307449722124F7F0054899D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DEB0998822111A7000F86520 /* GetLocationTests.xctest */ = {
+		9307449A22124F7F0054899D /* GetLocationTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = GetLocationTests.xctest;
-			remoteRef = DEB0998722111A7000F86520 /* PBXContainerItemProxy */;
+			remoteRef = 9307449922124F7F0054899D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DEB0998A22111A7000F86520 /* GetLocationUITests.xctest */ = {
+		9307449C22124F7F0054899D /* GetLocationUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = GetLocationUITests.xctest;
-			remoteRef = DEB0998922111A7000F86520 /* PBXContainerItemProxy */;
+			remoteRef = 9307449B22124F7F0054899D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -295,7 +305,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */,
 				F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */,
 				F750673021D11C2000576499 /* Assets.xcassets in Resources */,
 			);
@@ -322,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930744A4221258080054899D /* ViewController.swift in Sources */,
 				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
 				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
 				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
@@ -347,6 +357,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9307449E22124F840054899D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GetLocation;
+			targetProxy = 9307449D22124F840054899D /* PBXContainerItemProxy */;
+		};
 		F750673B21D11C2000576499 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F750672421D11C1F00576499 /* Seneka */;
@@ -360,10 +375,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F750672C21D11C1F00576499 /* Main.storyboard */ = {
+		930744A0221250220054899D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F750672D21D11C1F00576499 /* Base */,
+				9307449F221250220054899D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -500,7 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADARLC8T7J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Seneka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,6 +525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/estudiantes/Desktop/senekaapp/GetLocation;
 			};
 			name = Debug;
 		};
@@ -518,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADARLC8T7J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Seneka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

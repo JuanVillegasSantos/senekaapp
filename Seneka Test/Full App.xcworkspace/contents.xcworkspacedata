@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "absolute:/Users/estudiantes/Desktop/senekaapp/Seneka Test/Seneka/Seneka.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Seneka/../../GetLocation/GetLocation.xcodeproj">
+   </FileRef>
+</Workspace>
