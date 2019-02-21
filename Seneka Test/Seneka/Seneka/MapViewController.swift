@@ -1,22 +1,51 @@
 //
-//  Log In.swift
+//  ViewController.swift
 //  Seneka
 //
-//  Created by Santiago on 12/28/18.
+//  Created by Santiago on 12/24/18.
 //  Copyright © 2018 Seneka Inc. All rights reserved.
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController ,  CLLocationManagerDelegate{
     
+    @IBOutlet weak var map: MKMapView!
+    //Map
     
-    override func viewDidLoad() {
+    let manager = CLLocationManager()
+    
+    func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations[0]
+        
+        let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
+        let latitude=location.coordinate.latitude
+        let longitude=location.coordinate.longitude
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
+    
+        map.setRegion(region, animated: true)
+        
+        self.map.showsUserLocation=true
+        print([latitude, longitude]) //latitud= latitude, logitud= logitude
+    }
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
-        
-        
-        print ("Map View has loaded")
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+        print("Map View has loaded")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -37,6 +66,5 @@ class MapViewController: UIViewController {
         
         
     }
-    
-    
 }
+

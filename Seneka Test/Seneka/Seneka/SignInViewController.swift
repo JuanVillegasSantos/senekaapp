@@ -19,7 +19,7 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("Sign View has loaded")
+        print("View has loaded")
         
         
     }

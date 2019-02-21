@@ -1,22 +1,23 @@
 //
-//  Log In.swift
+//  ViewController.swift
 //  Seneka
 //
-//  Created by Santiago on 12/28/18.
+//  Created by Santiago on 12/24/18.
 //  Copyright © 2018 Seneka Inc. All rights reserved.
 //
 
 import UIKit
 
-class SalesViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
-        self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 31/255, green: 32/255, blue: 31/255, alpha: 1)
+        print("Profile View has loaded")
         
-        print ("View has loaded")
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -37,6 +38,5 @@ class SalesViewController: UIViewController {
         
         
     }
-    
     
 }

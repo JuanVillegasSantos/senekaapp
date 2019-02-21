@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
+		93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F40CB5221E2C2F0014D60B /* MapViewController.swift */; };
+		93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F40CBB221E3BE50014D60B /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */; };
 		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
 		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
 		F750673021D11C2000576499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F750672F21D11C2000576499 /* Assets.xcassets */; };
@@ -15,7 +18,6 @@
 		F750673E21D11C2000576499 /* SenekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750673D21D11C2000576499 /* SenekaTests.swift */; };
 		F750674921D11C2000576499 /* SenekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750674821D11C2000576499 /* SenekaUITests.swift */; };
 		F750675921D6C2A800576499 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* SalesViewController.swift */; };
-		F773D110221E4339005512A5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D10F221E4339005512A5 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93F40CB5221E2C2F0014D60B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		93F40CBB221E3BE50014D60B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GetLocation.xcodeproj; path = ../../GetLocation/GetLocation.xcodeproj; sourceTree = "<group>"; };
+		F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F750672521D11C1F00576499 /* Seneka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seneka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F750672821D11C1F00576499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F750672A21D11C1F00576499 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +77,6 @@
 		F750674821D11C2000576499 /* SenekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaUITests.swift; sourceTree = "<group>"; };
 		F750674A21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F750675821D6C2A800576499 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
-		F773D10F221E4339005512A5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93F40CBA221E3BE50014D60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93F40CBB221E3BE50014D60B /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEB0998022111A7000F86520 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 				F750674721D11C2000576499 /* SenekaUITests */,
 				F750672621D11C1F00576499 /* Products */,
 				DEB0997F22111A7000F86520 /* GetLocation.xcodeproj */,
+				93F40CBA221E3BE50014D60B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +151,8 @@
 				F750672821D11C1F00576499 /* AppDelegate.swift */,
 				F750672A21D11C1F00576499 /* SignInViewController.swift */,
 				F750675821D6C2A800576499 /* SalesViewController.swift */,
-				F773D10F221E4339005512A5 /* MapViewController.swift */,
+				93F40CB5221E2C2F0014D60B /* MapViewController.swift */,
+				F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */,
 				F750672C21D11C1F00576499 /* Main.storyboard */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
@@ -327,8 +342,9 @@
 			files = (
 				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
 				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
+				F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */,
 				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
-				F773D110221E4339005512A5 /* MapViewController.swift in Sources */,
+				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
