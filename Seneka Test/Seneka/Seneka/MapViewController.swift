@@ -8,25 +8,25 @@
 
 import UIKit
 
-class SalesViewController: UIViewController {
+class MapViewController: UIViewController {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 31/255, green: 32/255, blue: 31/255, alpha: 1)
         
-        print ("Sales View has loaded")
+        
+        print ("Map View has loaded")
     }
     
     override func viewDidAppear(_ animated: Bool){
         
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-
+        
         //TopNavBar?.tintColor = UIColor.yellow
         navigationItem.title = "Seneka"
-
+        
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont(name: "AvenirNext-Heavy", size: 30) as Any,
@@ -34,6 +34,7 @@ class SalesViewController: UIViewController {
         
         
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
+        
         
     }
     
