@@ -13,7 +13,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Seneka" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SignInViewController" storyboardIdentifier="Main.storyboard" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Seneka" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="SignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGr-Xq-jLL"/>
+                                    <action selector="SignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4n1-hF-HgM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seneka ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-cL-32w">
@@ -131,65 +131,99 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <segue destination="bqW-er-lJ8" kind="showDetail" identifier="SalesViewSergue" id="f2V-Mb-lvJ"/>
+                        <segue destination="oc7-79-Uok" kind="showDetail" identifier="SalesViewSergue" id="dbX-fK-GF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
         </scene>
-        <!--Sales View Controller-->
-        <scene sceneID="JAg-d0-5NX">
+        <!--Item 2-->
+        <scene sceneID="zaX-E0-AGv">
             <objects>
-                <viewController storyboardIdentifier="SalesViewController" id="bqW-er-lJ8" customClass="SalesViewController" customModule="Seneka" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p0Y-ih-2O0">
+                <viewController id="4Ay-UY-KKU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRS-GM-jyK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-7K-DzK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="TE0-qm-cEK"/>
-                                </items>
-                            </navigationBar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dub-ti-p94">
-                                <rect key="frame" x="0.0" y="9" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="hwr-3F-JBV"/>
-                                </items>
-                            </navigationBar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vop-Xr-X63">
-                                <rect key="frame" x="0.0" y="42" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="32"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Seneka" id="Hc9-Xw-phC"/>
-                                </items>
-                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Torre con Avión" translatesAutoresizingMaskIntoConstraints="NO" id="e0j-lu-Sys">
+                                <rect key="frame" x="67" y="356" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.39095860719999997" green="0.77098840479999997" blue="0.83514779809999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="jRc-at-vsi"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9MQ-Gm-BbN"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem tag="1" title="Item" id="H04-cW-nzK"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="SenekaTopToolBar" destination="TE0-qm-cEK" id="wXT-1y-8hW"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="nin-oh-WSH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eXc-Z5-Pgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T99-Rh-EH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920.79999999999995" y="22.906403940886701"/>
+            <point key="canvasLocation" x="1727" y="282"/>
+        </scene>
+        <!--Sales View Controller-->
+        <scene sceneID="bZa-Z2-MVt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYy-d1-smf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="WkK-M7-TUB" customClass="SalesViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A6G-Gk-EDK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenekaSponsored 3x" translatesAutoresizingMaskIntoConstraints="NO" id="3yp-oB-LMe">
+                                <rect key="frame" x="67" y="310" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qIw-jp-2m7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jT5-eT-wAz"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2668" y="-397.53694581280791"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ota-wY-noM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnK-04-5h8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="oc7-79-Uok" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="abm-Z3-yDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hbt-ur-9Os" kind="relationship" relationship="viewControllers" id="cdN-vd-Off"/>
+                        <segue destination="4Ay-UY-KKU" kind="relationship" relationship="viewControllers" id="VJo-R9-yPA"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="878" y="23"/>
+        </scene>
+        <!--Sales-->
+        <scene sceneID="YfN-G4-miv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbt-ur-9Os" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sales" id="Eud-Ox-eoL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vqx-CV-L7j">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WkK-M7-TUB" kind="relationship" relationship="rootViewController" id="QcI-cW-b6Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e51-nE-O0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="-397.53694581280791"/>
         </scene>
     </scenes>
     <resources>
+        <image name="SenekaSponsored 3x" width="483" height="443"/>
         <image name="Sign_In_Button" width="540" height="124"/>
+        <image name="Torre con Avión" width="528" height="473"/>
         <image name="TorreConAvionNubes" width="743" height="472"/>
         <image name="imageView:Zgp-ME-Uh6:highlightedImage" width="528" height="473">
             <mutableData key="keyedArchiveRepresentation">

@@ -15,9 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        Thread.sleep(forTimeInterval: 1.0) //add 4 seconds longer.
+        
+        //window = UIWindow(frame: UIScreen.main.bounds)
+        //let SignInViewController = UIViewController()
+        //window?.rootViewController = SignInViewController
+        //window?.makeKeyAndVisible()
+        
+        
+        //window?.rootViewController =
+        //    UINavigationController(rootViewController: SalesViewController())
+        
+        Thread.sleep(forTimeInterval: 1.0) //adds 1 second to launch time
         return true
+    
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
