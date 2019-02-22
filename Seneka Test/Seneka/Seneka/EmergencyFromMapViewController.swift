@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SalesViewController: UIViewController {
-
+class EmergencyFromMapViewController: UIViewController {
+    
     override func viewDidAppear(_ animated: Bool){
         
         //Adds a navigation Bar to the top of the screen
@@ -26,15 +26,14 @@ class SalesViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
     }
     //Connects button to ViewController
-    @IBAction func FromStoresToEmerButton(_ sender: Any) {
-        print("Emergency Button pressed")
-        self.performSegue(withIdentifier: "FromStoresToEmergencySergue", sender: self)
-    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print ("Stores View has loaded")
+        print ("Emergency View has loaded")
     }
     
 }

@@ -33,6 +33,12 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate{
         print([latitude, longitude]) //latitud= latitude, logitud= logitude
     }
     
+    @IBAction func MapsEmergencyButton(_ sender: Any) {
+        print("Emergency Button pressed")
+        self.performSegue(withIdentifier: "FromMapsToEmergency", sender: self)
+    }
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
