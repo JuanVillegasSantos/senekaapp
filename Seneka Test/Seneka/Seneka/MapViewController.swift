@@ -39,6 +39,11 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate{
     }
     
     
+    @IBAction func FromMapsToEmerButton(_ sender: Any) {
+        print("Button pressed")
+        self.performSegue(withIdentifier: "FromMapsToEmergency", sender: self)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

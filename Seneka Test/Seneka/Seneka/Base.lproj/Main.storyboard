@@ -293,15 +293,10 @@
                         <viewLayoutGuide key="safeArea" id="a5Y-4H-zSJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="nDB-Hu-xX6">
-                        <barButtonItem key="rightBarButtonItem" title="Emergency" image="PoliceAsset" id="SEq-2N-wvh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qVx-Xv-FpX">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="PoliceAsset" id="ceo-qz-iH1">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="MapsEmergencyButton:" destination="YdU-36-F4m" id="4t3-qq-UpF"/>
+                                <action selector="FromMapsToEmerButton:" destination="YdU-36-F4m" id="tXY-xg-TVp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -317,6 +312,7 @@
         <!--Emergency From Map View Controller-->
         <scene sceneID="hOy-5g-W2b">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqM-dJ-WOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wIU-Az-v0Z" customClass="EmergencyFromMapViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYa-nw-sKl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -326,7 +322,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="1LL-Ba-rV1"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqM-dJ-WOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4724" y="-84.236453201970448"/>
         </scene>
@@ -391,6 +386,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9eL-cz-eFP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhV-41-obg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wvE-Hv-R4p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oUO-Xy-flz">
@@ -402,7 +398,6 @@
                         <segue destination="wIU-Az-v0Z" kind="relationship" relationship="rootViewController" id="WHE-1C-Bj9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhV-41-obg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3781.5999999999999" y="-84.236453201970448"/>
         </scene>
