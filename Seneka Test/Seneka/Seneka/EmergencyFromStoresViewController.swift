@@ -8,15 +8,18 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class EmergencyFromStoresViewController: UIViewController {
     
-        
     
+    @IBAction func FromEmerToSalesButton(_ sender: Any) {
+        print("Back Button pressed")
+        self.performSegue(withIdentifier: "FromEmergencyToSales", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("Profile View has loaded")
+        print("Emergency View has loaded")
         
     }
     
@@ -35,5 +38,6 @@ class ProfileViewController: UIViewController {
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
     }
+    
     
 }

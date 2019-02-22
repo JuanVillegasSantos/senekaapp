@@ -9,34 +9,35 @@
 import UIKit
 
 class SalesViewController: UIViewController {
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 31/255, green: 32/255, blue: 31/255, alpha: 1)
-        
-        print ("View has loaded")
-    }
-    
+
     override func viewDidAppear(_ animated: Bool){
         
+        //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
         
-        //TopNavBar?.tintColor = UIColor.yellow
         navigationItem.title = "Seneka"
-        
+        //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont(name: "AvenirNext-Heavy", size: 30) as Any,
         ]
-        
-        
+        //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
-        
-        
     }
+    //Connects button to ViewController
+    @IBAction func FromStoresToEmerButton(_ sender: Any) {
+        print("Emergency Button pressed")
+        self.performSegue(withIdentifier: "FromStoresToEmergencySergue", sender: self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print ("Stores View has loaded")
+    }
+    
+
     
     
 }

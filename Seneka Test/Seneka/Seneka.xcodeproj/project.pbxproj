@@ -19,6 +19,7 @@
 		F750674921D11C2000576499 /* SenekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750674821D11C2000576499 /* SenekaUITests.swift */; };
 		F750675921D6C2A800576499 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* SalesViewController.swift */; };
 		F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D26221F3E4F003F0E15 /* RoundButton.swift */; };
+		F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		F750674A21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F750675821D6C2A800576499 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 		F7840D26221F3E4F003F0E15 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromStoresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				93F40CB5221E2C2F0014D60B /* MapViewController.swift */,
 				F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */,
 				F7840D26221F3E4F003F0E15 /* RoundButton.swift */,
+				F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */,
 				F750672C21D11C1F00576499 /* Main.storyboard */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
@@ -347,6 +350,7 @@
 				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
 				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
 				F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */,
+				F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */,
 				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
 				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
 			);
