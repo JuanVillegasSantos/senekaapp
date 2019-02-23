@@ -180,6 +180,7 @@
         <!--Emergency From Profile View Controller-->
         <scene sceneID="FIh-AO-XV3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnB-0S-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Y3x-wi-KIi" customClass="EmergencyFromProfileViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eFx-XP-b6Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -199,7 +200,6 @@
                         <segue destination="oc7-79-Uok" kind="showDetail" identifier="FromEmerToProfile" animates="NO" id="ZYX-ts-kqO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MnB-0S-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4670" y="582"/>
         </scene>
@@ -450,6 +450,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jFT-uh-NqF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8W-Oy-5Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zUG-3G-6ln" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gfz-1T-7YA">
@@ -461,7 +462,6 @@
                         <segue destination="Y3x-wi-KIi" kind="relationship" relationship="rootViewController" id="tox-rI-IF0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w8W-Oy-5Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3781.5999999999999" y="581.5270935960591"/>
         </scene>

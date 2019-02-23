@@ -32,7 +32,6 @@ class EmergencyFromProfileViewController: UIViewController {
     }
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

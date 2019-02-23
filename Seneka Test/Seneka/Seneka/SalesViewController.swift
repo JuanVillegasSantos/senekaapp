@@ -5,17 +5,16 @@
 //  Created by Santiago on 12/28/18.
 //  Copyright © 2018 Seneka Inc. All rights reserved.
 //
-
 import UIKit
-
-class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-
+//class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class SalesViewController: UIViewController {
+    
     override func viewDidAppear(_ animated: Bool){
         
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        
+        //Adds a title to the Navigation Bar
         navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
@@ -33,18 +32,18 @@ class SalesViewController: UICollectionViewController, UICollectionViewDelegateF
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         print ("Stores View has loaded")
         
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5
-    }
+    //override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+    //    return 5
+    //}
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath as IndexPath)
-        cell.backgroundColor = UIColor.red
-        return cell
-    }
+    //override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    //    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath as IndexPath)
+    //    cell.backgroundColor = UIColor.red
+    //    return cell
+    //}
 }
