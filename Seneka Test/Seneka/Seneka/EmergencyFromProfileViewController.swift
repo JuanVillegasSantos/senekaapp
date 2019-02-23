@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmergencyFromMapViewController: UIViewController {
+class EmergencyFromProfileViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool){
         
@@ -26,12 +26,11 @@ class EmergencyFromMapViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
     }
     //Connects button to ViewController
-    
-    
-    @IBAction func FromEmerToMaps(_ sender: Any) {
+    @IBAction func FromEmerToProfileButton(_ sender: Any) {
         print("Button pressed")
-        self.performSegue(withIdentifier: "FromEmerToMaps", sender: self)
+        self.performSegue(withIdentifier: "FromEmerToProfile", sender: self)
     }
+    
     
     
     override func viewDidLoad() {

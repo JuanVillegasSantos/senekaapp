@@ -11,6 +11,10 @@ import UIKit
 class ProfileViewController: UIViewController {
     
         
+    @IBAction func FromProfileToEmerButton(_ sender: Any) {
+        print("Button pressed")
+        self.performSegue(withIdentifier: "FromProfileToEmer", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,6 +21,7 @@
 		F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */; };
 		F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D26221F3E4F003F0E15 /* RoundButton.swift */; };
 		F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */; };
+		F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromMapViewController.swift; sourceTree = "<group>"; };
 		F7840D26221F3E4F003F0E15 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromStoresViewController.swift; sourceTree = "<group>"; };
+		F7EE65C72220D2940089CB3E /* Seneka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Seneka.entitlements; sourceTree = "<group>"; };
+		F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 		F750672721D11C1F00576499 /* Seneka */ = {
 			isa = PBXGroup;
 			children = (
+				F7EE65C72220D2940089CB3E /* Seneka.entitlements */,
 				F750672821D11C1F00576499 /* AppDelegate.swift */,
 				F750672A21D11C1F00576499 /* SignInViewController.swift */,
 				F750675821D6C2A800576499 /* SalesViewController.swift */,
@@ -163,6 +167,7 @@
 				F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */,
 				F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */,
 				F750672C21D11C1F00576499 /* Main.storyboard */,
+				F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
 				F750673421D11C2000576499 /* Info.plist */,
@@ -256,6 +261,14 @@
 				TargetAttributes = {
 					F750672421D11C1F00576499 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					F750673821D11C2000576499 = {
 						CreatedOnToolsVersion = 10.1;
@@ -357,6 +370,7 @@
 				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
 				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
 				F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */,
+				F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

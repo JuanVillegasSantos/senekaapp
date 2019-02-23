@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SalesViewController: UIViewController {
+class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     override func viewDidAppear(_ animated: Bool){
         
@@ -33,8 +33,18 @@ class SalesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print ("Stores View has loaded")
+        
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
     }
     
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 5
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath as IndexPath)
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
 }
