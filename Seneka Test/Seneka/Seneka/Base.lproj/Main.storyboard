@@ -312,7 +312,6 @@
         <!--Emergency From Map View Controller-->
         <scene sceneID="hOy-5g-W2b">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqM-dJ-WOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wIU-Az-v0Z" customClass="EmergencyFromMapViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYa-nw-sKl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -322,6 +321,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1LL-Ba-rV1"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqM-dJ-WOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4724" y="-84.236453201970448"/>
         </scene>
@@ -386,7 +386,6 @@
         <!--Navigation Controller-->
         <scene sceneID="9eL-cz-eFP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhV-41-obg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wvE-Hv-R4p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oUO-Xy-flz">
@@ -398,6 +397,7 @@
                         <segue destination="wIU-Az-v0Z" kind="relationship" relationship="rootViewController" id="WHE-1C-Bj9"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhV-41-obg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3781.5999999999999" y="-84.236453201970448"/>
         </scene>
