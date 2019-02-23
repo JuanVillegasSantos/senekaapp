@@ -6,6 +6,24 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx} %Allows you to import images
 \usepackage{float} %Allows for control of float positions
+
+\usepackage{moreverb} % for verbatim ouput
+
+% Count of words
+
+\immediate\write18{texcount -inc -incbib 
+-sum Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/wordcount.tex}
+\newcommand\wordcount{
+\verbatiminput{/Users/miequipo/Documents/wordcount.tex}}
+
+% Count of characters
+
+\immediate\write18{texcount -char -freq
+ Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/charcount.tex}
+\newcommand\charcount{
+\verbatiminput{/Users/miequipo/Documents/charcount.tex}}
+
+
 \begin{document}
 
 \title{Seneka App\\
@@ -96,8 +114,7 @@ We decided that our first approach was to develop the prototype of the applicati
 
 \Large{\textbf{4.1 Programming process}\\}\\
 
-We started by reading how to code in Swift which is the scripting language that is used in Xcode. The next stage was to start the interface design process in the computer using a powerful tool within Xcode called Storyboard. In the storyboard it is possible to drag all the required elements to properly create an app interface. We 
->>>>>>> Stashed changes
+We have been investigating about the scripting language Swift which is the one used for creating iOS applications in Xcode. The next stage was to start the interface design process in the computer using a powerful tool within Xcode called Storyboard. In the storyboard it is possible to drag all the required elements to properly create an app interface which are contained in what Xcode calls View Controller. We began by creating a Sign in/Log in view controller with a button that takes the user to the main set of view controllers of the app. 
 
 \Large{\textbf{4.2 Testing process}\\}\\
 
@@ -106,11 +123,11 @@ We started by reading how to code in Swift which is the scripting language that 
 
 \Large{\textbf{5.1 Achievements}\\}
 
-The aeroespace industry will get stronger as the number of passengers could feel comfortable with the security and good service. But the aeroespace industry also includes ground service and people working in it, that is one of the aspects that might have been forgotten or neglected. With Seneka platform and its service Seneka App, passengers, airports and airlines could be beneficiaries of the system of tracking paths within the airport, that's because people could be more in touch with all the services offered inside of it.\\
+The aerospace industry will get stronger as the number of passengers could feel comfortable with the security and good service. But the aerospace industry also includes ground service and people working in it, that is one of the aspects that might have been forgotten or neglected. With Seneka platform and its service Seneka App, passengers, airports and airlines could be beneficiaries of the system of tracking paths within the airport, that's because people could be more in touch with all the services offered inside of it.\\
 
 Likewise, sales will increase with the arrival of more and new travelers that are more likely to go through this airport with the revolutionary Seneka's way to buy at the airports around the world. The system is easy, the passenger selects his/her products and pays in the platform. Then enters his route and the app locates the nearest cupboard in which she/he could get the purchase without going through the airport. The cupboard are the new spaces that we identify as a pick up station, in which the seller leaves the purchase with a security code that buyer already has. Putting this code, the cupboard automatically selects the order and deliver it to the buyer in a few seconds.\\
 
-At the same time, the congestion on hours of simultaneous boarding flights will be better as the number of travelers using Seneka App increases, because they will get an efficiet path to get into the correct gate. The waiting rooms will get full only at the right times because passengers will spent their time in entertaimen places without fear of losing their fligths.\\
+At the same time, the congestion on hours of simultaneous boarding flights will be better as the number of travelers using Seneka App increases, because they will get an efficient path to get into the correct gate. The waiting rooms will get full only at the right times because passengers will spent their time in entertainment places without fear of losing their flights.\\
 
 There is also a 
 
@@ -119,6 +136,7 @@ Aquí explicamos como nuestra idea innovaría la industria y que es necesario pa
 
 
 
-
+\subsubsection*{Counts of words} 
+\wordcount
 
 \end{document}
