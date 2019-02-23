@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  Mapeo
+//  showPlaceOnMap
 //
-//  Created by Miguel Angel Garzon Orjuela on 1/30/19.
-//  Copyright © 2019 Miguel Angel Garzon Orjuela. All rights reserved.
+//  Created by Miguel Garzon
 //
 
 import UIKit
@@ -20,16 +19,14 @@ class customPin: NSObject, MKAnnotation {
         self.coordinate = location
     }
 }
-
-class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate{
+class ViewController: UIViewController,MKMapViewDelegate, UISearchBarDelegate {
     
     @IBAction func searchButton(_ sender: Any) {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         present(searchController, animated: true, completion: nil)
     }
-    
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var myMapView: MKMapView!
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         UIApplication.shared.beginIgnoringInteractionEvents()
@@ -57,13 +54,13 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let sourceLocation = CLLocationCoordinate2D(latitude:4.697895 , longitude: -74.140412)
-        let destinationLocation = CLLocationCoordinate2D(latitude:4.66 , longitude: -74.143076)
+        let sourceLocation = CLLocationCoordinate2D(latitude:39.173209 , longitude: -94.593933)
+        let destinationLocation = CLLocationCoordinate2D(latitude:38.643172 , longitude: -90.177429)
         
-        let sourcePin = customPin(pinTitle: "Origen", pinSubTitle: "", location: sourceLocation)
-        let destinationPin = customPin(pinTitle: "Destino", pinSubTitle: "", location: destinationLocation)
-        self.mapView.addAnnotation(sourcePin)
-        self.mapView.addAnnotation(destinationPin)
+        let sourcePin = customPin(pinTitle: "Kansas City", pinSubTitle: "", location: sourceLocation)
+        let destinationPin = customPin(pinTitle: "St. Louis", pinSubTitle: "", location: destinationLocation)
+        //self.mapView.addAnnotation(sourcePin)
+        //self.mapView.addAnnotation(destinationPin)
         
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
         let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
@@ -83,31 +80,34 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate{
             }
             
             let route = directionResonse.routes[0]
-            self.mapView.add(route.polyline, level: .aboveRoads)
+            //self.mapView.add(route.polyline, level: .aboveRoads)
             
             let rect = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            //self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
         }
         
-        self.mapView.delegate = self
+        //self.mapView.delegate = self
         
         
     }
     
-    //MARK:- MapKit delegates
-    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.strokeColor = UIColor.black
-        renderer.lineWidth = 2.0
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 4.0
         return renderer
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-}
 
+
+}

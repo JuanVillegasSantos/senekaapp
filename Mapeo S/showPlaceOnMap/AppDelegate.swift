@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Mapeo
-//
-//  Created by Miguel Angel Garzon Orjuela on 1/30/19.
-//  Copyright © 2019 Miguel Angel Garzon Orjuela. All rights reserved.
-//
 
 import UIKit
 
