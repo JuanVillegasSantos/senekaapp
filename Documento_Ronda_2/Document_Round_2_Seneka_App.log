@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 FEB 2019 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 FEB 2019 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -590,22 +590,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
@@ -629,24 +629,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
 No file /Users/miequipo/Documents/wordcount.tex.
-[7] [8] (./Document_Round_2_Seneka_App.aux) ) 
+[8] (./Document_Round_2_Seneka_App.aux) ) 
 Here is how much of TeX's memory you used:
  3804 strings out of 492649
  55232 string characters out of 6129622
- 217813 words of memory out of 5000000
+ 219813 words of memory out of 5000000
  7613 multiletter control sequences out of 15000+600000
  29786 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,32p,1382b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dis
-t/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dv
-ips/lm/lm-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmb
-x10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on Document_Round_2_Seneka_App.pdf (8 pages, 581384 bytes).
+ 41i,7n,32p,1462b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fo
+nts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/
+lm/lm-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/lm/lmr17.pfb>
+Output written on Document_Round_2_Seneka_App.pdf (8 pages, 582890 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
