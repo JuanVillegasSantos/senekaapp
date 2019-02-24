@@ -37,6 +37,7 @@ class EmergencyFromStoresViewController: UIViewController {
         ]
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
+        //self.navigationController?.pushViewController(SalesViewController?, animated: true)
     }
     
     

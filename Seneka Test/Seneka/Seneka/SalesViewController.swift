@@ -8,9 +8,10 @@
 import UIKit
 //class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 class SalesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    
+    
     var arrayOfStores = [UIImage]()
-    var arrayOfIDs = [String]()
+    var arrayOfIDs = ["Store1", "Store2",]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfStores.count
@@ -18,9 +19,18 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-            return cell
+       
+        let imageView = cell.viewWithTag(1) as! UIImageView
+        imageView.image = arrayOfStores[indexPath.row]
+        
+        return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let name = arrayOfIDs[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
     
     override func viewDidAppear(_ animated: Bool){
         
@@ -45,21 +55,12 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrayOfStores = [TorreConAvionNubes,ProfileAsset]
+
+        arrayOfStores += [UIImage(named: "VeggieFoodAsset.png")!, UIImage(named: "CafeAsset.png")!, UIImage(named: "SouvenirAsset.png")!, UIImage(named: "JewerlyAsset.png")!, UIImage(named: "BarAsset.png")!, UIImage(named: "MoneyAsset.png")!, UIImage(named: "DutyAsset.png")!, UIImage(named: "CookiesAsset.png")!]
         arrayOfIDs = ["Store1","Store2"]
         
-        //collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         print ("Stores View has loaded")
         
     }
     
-    //override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-    //    return 5
-    //}
-    
-    //override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    //    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath as IndexPath)
-    //    cell.backgroundColor = UIColor.red
-    //    return cell
-    //}
 }
