@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 FEB 2019 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 FEB 2019 12:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -235,36 +235,29 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count95
 \listing@line=\count96
 )
-runsystem(texcount -inc -incbib -sum Document_Round_2_Seneka_App.tex > /Users/m
-iequipo/Documents/wordcount.tex)...disabled (restricted).
-
-runsystem(texcount -char -freq Document_Round_2_Seneka_App.tex > /Users/miequip
-o/Documents/charcount.tex)...disabled (restricted).
-
-
 (./Document_Round_2_Seneka_App.aux)
 \openout1 = `Document_Round_2_Seneka_App.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 30.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 34.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -371,153 +364,180 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 36.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 40.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 40.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 36.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 40.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 36.
+(Font)              <14.4> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 36.
+(Font)              <10> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 36.
+(Font)              <7> on input line 40.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+LaTeX Warning: Reference `visualization' on page 1 undefined on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-<Figura_1.jpg, id=1, 763.85374pt x 488.82625pt>
-File: Figura_1.jpg Graphic file (type jpg)
-<use Figura_1.jpg>
-Package pdftex.def Info: Figura_1.jpg  used on input line 46.
-(pdftex.def)             Requested size: 451.73044pt x 289.07999pt.
+<images/Visualization.jpg, id=1, 763.85374pt x 488.82625pt>
+File: images/Visualization.jpg Graphic file (type jpg)
+<use images/Visualization.jpg>
+Package pdftex.def Info: images/Visualization.jpg  used on input line 50.
+(pdftex.def)             Requested size: 375.80544pt x 240.4966pt.
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 58.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 64.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-[2 <./Figura_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+[2 <./images/Visualization.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+LaTeX Warning: Reference `canvass' on page 5 undefined on input line 122.
+
+
+LaTeX Warning: Reference `ecosystem' on page 5 undefined on input line 122.
+
+<images/Canvass.jpg, id=22, 722.7pt x 509.905pt>
+File: images/Canvass.jpg Graphic file (type jpg)
+<use images/Canvass.jpg>
+Package pdftex.def Info: images/Canvass.jpg  used on input line 126.
+(pdftex.def)             Requested size: 375.80544pt x 265.15211pt.
+<images/Ecosystem.jpeg, id=23, 822.52293pt x 821.61957pt>
+File: images/Ecosystem.jpeg Graphic file (type jpg)
+<use images/Ecosystem.jpeg>
+Package pdftex.def Info: images/Ecosystem.jpeg  used on input line 133.
+(pdftex.def)             Requested size: 375.80544pt x 375.39206pt.
+[5 <./images/Canvass.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+[6 <./images/Ecosystem.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[7] [8] (./Document_Round_2_Seneka_App.aux)
 
- []
+LaTeX Warning: There were undefined references.
 
-No file /Users/miequipo/Documents/wordcount.tex.
-[6] [7] (./Document_Round_2_Seneka_App.aux) ) 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3804 strings out of 492649
- 55260 string characters out of 6129622
- 218846 words of memory out of 5000000
- 7615 multiletter control sequences out of 15000+600000
+ 3817 strings out of 492649
+ 55549 string characters out of 6129622
+ 219769 words of memory out of 5000000
+ 7625 multiletter control sequences out of 15000+600000
  33063 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,32p,1462b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dis
-t/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/d
-vips/lm/lm-rm.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmb
-x12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on Document_Round_2_Seneka_App.pdf (7 pages, 538076 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
+/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/public/lm/lmr17.pfb>
+Output written on Document_Round_2_Seneka_App.pdf (8 pages, 891867 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

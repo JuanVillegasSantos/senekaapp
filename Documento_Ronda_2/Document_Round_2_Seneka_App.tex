@@ -4,8 +4,12 @@
 \usepackage{lmodern,textcomp}
 \usepackage{lipsum}
 \usepackage[margin=1in]{geometry}
+%%%%%%%%%%%%
 \usepackage{graphicx} %Allows you to import images
+\graphicspath{ {images/} }
+%%%%%%%%%%%%
 \usepackage{float} %Allows for control of float positions
+
 
 \usepackage{moreverb} % for verbatim ouput
 
@@ -13,17 +17,17 @@
 
 % Count of words
 
-\immediate\write18{texcount -inc -incbib 
--sum Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/wordcount.tex}
-\newcommand\wordcount{
-\verbatiminput{/Users/miequipo/Documents/wordcount.tex}}
+%\immediate\write18{texcount -inc -incbib 
+%-sum Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/wordcount.tex}
+%\newcommand\wordcount{
+%\verbatiminput{/Users/miequipo/Documents/wordcount.tex}}
 
 % Count of characters
 
-\immediate\write18{texcount -char -freq
- Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/charcount.tex}
-\newcommand\charcount{
-\verbatiminput{/Users/miequipo/Documents/charcount.tex}}
+%\immediate\write18{texcount -char -freq
+% Document_Round_2_Seneka_App.tex > /Users/miequipo/Documents/charcount.tex}
+%\newcommand\charcount{
+%\verbatiminput{/Users/miequipo/Documents/charcount.tex}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -38,12 +42,14 @@ Airbus Fly Your Ideas}
 
 \section{Summary}
 
-Seneka is a platform with the ability of integrating the basic technology and engineering concepts in order to provide to the flight passengers the capacity of using their time in a pleasant way along the different airports that might be involved in their path during their business or leisure flights. Moreover, the platform brings support to the airport and airlines to allow them tracking, alerting and making contact with a passenger to notify about changes on their flight itinerary. Seneka also supports the interaction between passenger and the airport, a passenger can get notifications about the commercial offerings and the status of his order. Additionally, the passenger becomes an active member of the security team of the airport by informing to the local authorities about any emergency or misbehaviour from any other person using the app. The application has a sign-in interface for user that subsequently directs it to an airport selection interface where he or she will indicate where they want to be located and find optimal routes for their displacement. Likewise, the app has a search selection interface where the users can find stores, boarding gates and places of interest. Furthermore, an user profile interface can be found where it is possible to identify and modify their personal information and verify their flights.\\
-
+Seneka is a platform with the ability of integrating the basic technology and engineering concepts in order to provide the flights passengers the capacity of using their time in a pleasant way along the different airports that might be involved in their path during their business or leisure flights. Moreover, the platform supports the airport and airlines to allow them tracking, alerting and making contact with a passenger to notify about changes on their flight itinerary. Seneka also supports the interaction between passenger and the airport, a passenger can get notifications about the commercial offerings and the status of his order. Additionally, the passenger becomes an active member of the security team of the airport by informing the local authorities about any emergency or misbehavior from any other person using the app.\\
+As shown in figure \ref{visualization}, the application has a sign-in interface for user that subsequently directs it to an airport selection interface where he or she will indicate where they want to be located and find optimal routes for their displacement. Likewise, the app has a search selection interface where the users can find stores, boarding gates and places of interest. Furthermore, an user profile interface can be found where it is possible to identify and modify their personal information and verify their flights.\\
 
 \begin{figure}[H]
-\centering
-\includegraphics[height=4.0in]{Figura_1.jpg}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Visualization.jpg}
+	\caption{Passengers App Prototype}
+	\label{visualization}
 \end{figure}
 
 \section{Objetives}
@@ -65,17 +71,17 @@ Design a platform that can provide user support on his/her way through an airpor
 
 \subsection{Round 3 Specific Objetives}
 \begin{itemize}
-	\item Create a functional map interface to guide a passenger to a desired place and find commercial offers through a foreing airport.
-	\item Implement a security bottom thar make the passenger connect inmediately with police or nearly security guard on the airport.
+	\item Create a functional map interface to guide a passenger to a desired place and find commercial offers through a foreign airport.
+	\item Implement a security bottom that make the passenger connect immediately with police or nearly security guard on the airport.
 	\item Implement an "alert flight status" that gives a warning message to the passenger regarding flight status, delays and board gates updates. 
-	\item Based in service brochure, we will develope an app which could be used in a cell phone with iOS system.\\
+	\item Based in service brochure, we will develop an app which could be used in a cell phone with iOS system.\\
 [0.6cm]
 \end{itemize}
 
 \subsection{Changes}
-Our idea has changed, from an app to a platform with the intention of provide better services to the different actors. Also, we expand our clientele, now we are creating a new form to improve the airport traffic efficently, making four distinct Apps for the passenger, the airport, the airlines and the shops.
+Our idea has changed, from an app to a platform with the intention of provide better services to the different actors. Also, we expand our clientele, now we are creating a new form to improve the airport traffic efficiently, making four distinct Apps for the passenger, the airport, the airlines and the shops.\\
 [0.7cm]
-\\
+
 \section{Description}
 
 \subsection{Problem}
@@ -88,19 +94,19 @@ As an exemplification of the problem, there is a derived issue that is flights s
 
 Following this kind of problems, we have been developing a solution using IT products by means of a reference architecture that allowed us to structure the IT products and services needed to have a clearer view of the stated problem.\\
 
-Following this, we defined the ecosystem and the Bussiness Model Canvas of the Seneka Platform and based on those the described resources were stablished as a services catalog.\\
+Following this, we defined the ecosystem and the business Model Canvas of the Seneka Platform and based on those the described resources were stablished as a services catalog.\\
 
 From the catalog services, we created a schedule in which we specified every single step that we needed to follow in the App development in accordance with the requirements that we exposed in the video.\\
 
 This schedule was divided in 3 major steps:
-\begin{itemize}
-\item Idea Convergence:\\
-This process was focused on filtrating the ideas proposed on Round 1 in order to have a clearer insight and a more feasible approximation of our proposed idea. The set of activities at this point were directed towards generating some surveys to get information about the acceptance and possible changes to our first proposed idea.
-\item Visual design process:\\
-This process involved the evaluation of the different colors, logos and front-end interface of our proposed prototype. This was made using a combination of surveys and creative process which helped us to have an optimum and smooth visual interface.
-\item Development process::\\
-This process was focused on the programming and development of a first prototype to show a visual interface of the Seneka Platform for passengers.
 
+\begin{itemize}
+	\item Idea Convergence:\\
+	This process was focused on filtrating the ideas proposed on Round 1 in order to have a clearer insight and a more feasible approximation of our proposed idea. The 	set of activities at this point were directed towards generating some surveys to get information about the acceptance and possible changes to our first proposed idea.
+	\item Visual design process:\\
+	This process involved the evaluation of the different colors, logos and front-end interface of our proposed prototype. This was made using a combination of surveys 		and creative process which helped us to have an optimum and smooth visual interface.
+	\item Development process::\\
+	This process was focused on the programming and development of a first prototype to show a visual interface of the Seneka Platform for passengers.
 \end{itemize}
 
 
@@ -113,11 +119,26 @@ For the development of the video that was published on Facebook in which we show
 
 \subsection{Results, their reliability and significance}
 
-We have developed the architecture of an IT solution platform linked with a portfolio of applications that work together to 
+We have developed the architecture of an IT solution platform linked with a portfolio of applications that work together to offer a set of services focused on reducing the communication breach between passengers, airports, airlines and in general, all on ground services. The architecture developed consisted of a business Canvass regarding the proposed idea as it is shown in the figure \ref{canvass} , which is based on the business ecosystem we identified as the best fitting model of the environment of interest (figure \ref{ecosystem})
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Canvass.jpg}
+	\caption { Business Canvass}
+	\label{canvass}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Ecosystem.jpeg}
+	\caption { Business Ecosystem}
+	\label{ecosystem}
+\end{figure}
+Also, we developed a 
 
 \subsection{Innovation}
 
-The aeroespace industry will get stronger as the number of passengers could feel comfortable with the security and good service. This industry, does not only rely on passengers and airlines, it also includes ground service and people working in it, that is one of the aspects that might have been forgotten or neglected. With Seneka platform and its service Seneka App, passengers, airports and airlines could be beneficiaries of the system of tracking paths within the airport, that's because people could be more in touch with all the services offered inside of it.\\
+The aerospace industry will get stronger as the number of passengers could feel comfortable with the security and good service. This industry, does not only rely on passengers and airlines, it also includes ground service and people working in it, that is one of the aspects that might have been forgotten or neglected. With Seneka platform and its service Seneka App, passengers, airports and airlines could be beneficiaries of the system of tracking paths within the airport, that's because people could be more in touch with all the services offered inside of it.\\
 
 Likewise, sales will increase with the arrival of more and new travelers that are more likely to go through this airport with the revolutionary Seneka's way to buy at the airports around the world. The system is easy, the passenger selects his/her products and pays in the platform. Then enters his route and the app locates the nearest cupboard in which she/he could get the purchase without going through the airport. The cupboard are the new spaces that we identify as a pick up station, in which the seller leaves the purchase with a security code that buyer already has. Putting this code, the cupboard automatically selects the order and deliver it to the buyer in a few seconds.\\
 
@@ -149,7 +170,7 @@ Aquí explicamos como nuestra idea innovaría la industria y que es necesario pa
 
 
 
-\subsubsection*{Counts of words} 
-\wordcount
+%\subsubsection*{Counts of words} 
+%\wordcount
 
 \end{document}
