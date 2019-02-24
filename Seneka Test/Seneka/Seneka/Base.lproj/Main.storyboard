@@ -163,7 +163,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2ZO-ja-VFV">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="PoliceAsset" id="ZWf-XD-sbG">
-                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="tintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="FromProfileToEmerButton:" destination="4Ay-UY-KKU" id="MDw-hu-DzT"/>
                             </connections>
@@ -180,7 +180,6 @@
         <!--Emergency From Profile View Controller-->
         <scene sceneID="FIh-AO-XV3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MnB-0S-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Y3x-wi-KIi" customClass="EmergencyFromProfileViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eFx-XP-b6Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -200,6 +199,7 @@
                         <segue destination="oc7-79-Uok" kind="showDetail" identifier="FromEmerToProfile" animates="NO" id="ZYX-ts-kqO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnB-0S-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4670" y="582"/>
         </scene>
@@ -238,19 +238,102 @@
             </objects>
             <point key="canvasLocation" x="4671" y="-778"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5cH-FH-vlF">
+            <objects>
+                <viewController storyboardIdentifier="Store1" id="nSu-Pn-W0U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkC-Ks-nNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-Dv-jQz">
+                                <rect key="frame" x="192" y="396" width="12" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1T5-ju-dnt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="463-OG-yQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.8000000000002" y="-1527.3399014778327"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yyY-Z7-Q0K">
+            <objects>
+                <viewController id="kPo-wU-9Dc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Store2" id="Zb2-JL-fmm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivX-Hq-PRH">
+                                <rect key="frame" x="188" y="421" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n0j-E0-1xv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mae-x0-Wmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2979" y="-1519"/>
+        </scene>
         <!--Sales View Controller-->
         <scene sceneID="bZa-Z2-MVt">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYy-d1-smf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="WkK-M7-TUB" customClass="SalesViewController" customModule="Seneka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6G-Gk-EDK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jgj-lz-SA8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jHc-OT-uhg">
+                                    <size key="itemSize" width="375" height="134"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="UEa-wo-akY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="531-iv-fpo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="WkK-M7-TUB" id="Tmd-f0-eov"/>
+                                    <outlet property="delegate" destination="WkK-M7-TUB" id="zX7-6U-FJi"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qIw-jp-2m7"/>
                     </view>
                     <navigationItem key="navigationItem" id="jT5-eT-wAz">
                         <barButtonItem key="rightBarButtonItem" title="Emergency" image="PoliceAsset" id="MTw-uy-9mb">
-                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="tintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="FromStoresToEmerButton:" destination="WkK-M7-TUB" id="YUP-Tg-Bmr"/>
                             </connections>
@@ -260,7 +343,6 @@
                         <segue destination="OZW-dy-80B" kind="showDetail" identifier="FromStoresToEmergencySergue" id="389-D2-AsM"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FYy-d1-smf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.5999999999999" y="-778.07881773399015"/>
         </scene>
@@ -320,7 +402,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nDB-Hu-xX6">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="PoliceAsset" id="ceo-qz-iH1">
-                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="tintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="FromMapsToEmerButton:" destination="YdU-36-F4m" id="tXY-xg-TVp"/>
                             </connections>
@@ -450,7 +532,6 @@
         <!--Navigation Controller-->
         <scene sceneID="jFT-uh-NqF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w8W-Oy-5Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zUG-3G-6ln" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gfz-1T-7YA">
@@ -462,6 +543,7 @@
                         <segue destination="Y3x-wi-KIi" kind="relationship" relationship="rootViewController" id="tox-rI-IF0"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8W-Oy-5Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3781.5999999999999" y="581.5270935960591"/>
         </scene>

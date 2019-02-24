@@ -7,7 +7,20 @@
 //
 import UIKit
 //class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-class SalesViewController: UIViewController {
+class SalesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+    var arrayOfStores = [UIImage]()
+    var arrayOfIDs = [String]()
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayOfStores.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+            return cell
+    }
+    
     
     override func viewDidAppear(_ animated: Bool){
         
@@ -32,6 +45,9 @@ class SalesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        arrayOfStores = [TorreConAvionNubes,ProfileAsset]
+        arrayOfIDs = ["Store1","Store2"]
+        
         //collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         print ("Stores View has loaded")
         
