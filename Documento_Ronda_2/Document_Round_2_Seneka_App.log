@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 FEB 2019 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 FEB 2019 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -391,10 +391,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-
-LaTeX Warning: Reference `visualization' on page 1 undefined on input line 46.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
@@ -425,116 +421,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-[4]
-
-LaTeX Warning: Reference `canvass' on page 5 undefined on input line 122.
-
-
-LaTeX Warning: Reference `ecosystem' on page 5 undefined on input line 122.
-
-<images/Canvass.jpg, id=22, 722.7pt x 509.905pt>
+<images/Canvass.jpg, id=19, 722.7pt x 509.905pt>
 File: images/Canvass.jpg Graphic file (type jpg)
 <use images/Canvass.jpg>
-Package pdftex.def Info: images/Canvass.jpg  used on input line 126.
+Package pdftex.def Info: images/Canvass.jpg  used on input line 119.
 (pdftex.def)             Requested size: 375.80544pt x 265.15211pt.
+[4]
 <images/Ecosystem.jpeg, id=23, 822.52293pt x 821.61957pt>
 File: images/Ecosystem.jpeg Graphic file (type jpg)
 <use images/Ecosystem.jpeg>
-Package pdftex.def Info: images/Ecosystem.jpeg  used on input line 133.
-(pdftex.def)             Requested size: 375.80544pt x 375.39206pt.
-[5 <./images/Canvass.jpg>]
+Package pdftex.def Info: images/Ecosystem.jpeg  used on input line 126.
+(pdftex.def)             Requested size: 281.85587pt x 281.55345pt.
+ [5 <./images/Canvass.jpg> <./images/Ecosystem.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-[6 <./images/Ecosystem.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[7] [8] (./Document_Round_2_Seneka_App.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
- ) 
+ []
+
+[7] [8] (./Document_Round_2_Seneka_App.aux) ) 
 Here is how much of TeX's memory you used:
- 3817 strings out of 492649
- 55549 string characters out of 6129622
- 219769 words of memory out of 5000000
- 7625 multiletter control sequences out of 15000+600000
- 33063 words of font info for 32 fonts, out of 8000000 for 9000
+ 3568 strings out of 492649
+ 52710 string characters out of 6129622
+ 219793 words of memory out of 5000000
+ 7379 multiletter control sequences out of 15000+600000
+ 30117 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,32p,1462b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
-/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/lm/lmr17.pfb>
-Output written on Document_Round_2_Seneka_App.pdf (8 pages, 891867 bytes).
+{/usr/local/texlive/2018/texmf-dis
+t/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/d
+vips/lm/lm-rm.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmb
+x12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
+Output written on Document_Round_2_Seneka_App.pdf (8 pages, 891260 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
