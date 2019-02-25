@@ -8,7 +8,28 @@
 
 import UIKit
 
-class EmergencyFromStoresViewController: UIViewController {
+class EmergencyFromStoresViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+   
+    var arrayOfEmergencies = [UIImage]()
+    var arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayOfEmergencies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "securityCell", for: indexPath)
+        
+        let imageView = cell.viewWithTag(1) as! UIImageView
+        imageView.image = arrayOfEmergencies[indexPath.row]
+        
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let name = arrayOfIDs[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
     
     
     @IBAction func FromEmerToSalesButton(_ sender: Any) {
@@ -17,9 +38,11 @@ class EmergencyFromStoresViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        print("Emergency View has loaded")
+        arrayOfEmergencies += [UIImage(named: "VeggieFoodAsset.png")!, UIImage(named: "CafeAsset.png")!, UIImage(named: "SouvenirAsset.png")!]
+        arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
+        
+        print ("Emergencies View has loaded")
         
     }
     
@@ -38,6 +61,8 @@ class EmergencyFromStoresViewController: UIViewController {
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
         //self.navigationController?.pushViewController(SalesViewController?, animated: true)
+        
+       
     }
     
     
