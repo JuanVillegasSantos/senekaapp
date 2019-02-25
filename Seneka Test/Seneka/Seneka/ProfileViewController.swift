@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         return cell
     }
-        
+    //Configure Button to go to desired Asset
     @IBAction func FromProfileToEmerButton(_ sender: Any) {
         print("Button pressed")
         self.performSegue(withIdentifier: "FromProfileToEmer", sender: self)
@@ -35,8 +35,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoLabelAsset.png")!, UIImage(named: "AgeAsset.png")!, UIImage(named: "GenderAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "IDNumberAsset.png")!, UIImage(named: "PassportNumberAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!, UIImage(named: "BloodTypeAsset.png")!, UIImage(named: "WeightAsset.png")!, UIImage(named: "WhiteAsset.png")!]
+        //Adds the assets to the Collection Controller
+        arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoLabelAsset.png")!, UIImage(named: "AgeAsset.png")!, UIImage(named: "GenderAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "IDNumberAsset.png")!, UIImage(named: "PassportNumberAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!, UIImage(named: "BloodTypeAsset.png")!, UIImage(named: "WeightAsset.png")!, UIImage(named: "HeightAsset.png")!, UIImage(named: "WhiteAsset.png")!]
         
         //arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!]
         
