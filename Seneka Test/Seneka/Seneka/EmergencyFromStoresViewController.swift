@@ -39,7 +39,7 @@ class EmergencyFromStoresViewController: UIViewController, UICollectionViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayOfEmergencies += [UIImage(named: "VeggieFoodAsset.png")!, UIImage(named: "CafeAsset.png")!, UIImage(named: "SouvenirAsset.png")!]
+        arrayOfEmergencies += [UIImage(named: "PoliceCallAsset.png")!, UIImage(named: "MedicalAsset.png")!, UIImage(named: "AirportSecAsset.png")!]
         arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
         
         print ("Emergencies View has loaded")
