@@ -8,7 +8,29 @@
 
 import UIKit
 
-class EmergencyFromMapViewController: UIViewController {
+class EmergencyFromMapViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var arrayOfEmergencies = [UIImage]()
+    var arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrayOfEmergencies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "securityCell", for: indexPath)
+        
+        let imageView = cell.viewWithTag(1) as! UIImageView
+        imageView.image = arrayOfEmergencies[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let name = arrayOfIDs[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
     
     override func viewDidAppear(_ animated: Bool){
         
@@ -36,6 +58,9 @@ class EmergencyFromMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        arrayOfEmergencies += [UIImage(named: "PoliceCallAsset.png")!, UIImage(named: "MedicalAsset.png")!, UIImage(named: "AirportSecAsset.png")!]
+        arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
         
         print ("Emergency View has loaded")
     }

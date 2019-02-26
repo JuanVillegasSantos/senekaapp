@@ -24,6 +24,47 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         present(searchController, animated: true, completion: nil)
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+    {
+        //Ignoring users activity
+        //UIApplication.shared.beginIgnoringInteractionEvents()
+        
+        //Loading icon (activity indicator)
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
+        self.view.addSubview(activityIndicator)
+        
+        //Hide search bar when looking for a place
+        searchBar.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+        
+        //Convert String on search bar to search request
+        let searchRequest = MKLocalSearch.Request()
+        searchRequest.naturalLanguageQuery = searchBar.text
+        
+        let activeSearch = MKLocalSearch(request: searchRequest)
+        activeSearch.start { (response, Error) in
+            if response == nil
+            {
+                print("Error caused by nil response")
+            }
+            else
+            {
+                let newLatitude=response?.boundingRegion.center.latitude
+                let newLongitud=response?.boundingRegion.center.longitude
+                
+                let annotation = MKPointAnnotation()
+                annotation.title=searchBar.text
+                annotation.coordinate=CLLocationCoordinate2DMake(newLatitude!, newLongitud!)
+                self.map.addAnnotation(annotation)
+            }
+        }
+    }
+    
     let manager = CLLocationManager()
     
     func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
