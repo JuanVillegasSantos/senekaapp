@@ -24,6 +24,10 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         present(searchController, animated: true, completion: nil)
     }
     
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 667c7d8bd7f0efadc7af9c28825fbd17743cd579
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
     {
         //Ignoring users activity
@@ -65,6 +69,11 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         }
     }
     
+<<<<<<< HEAD
+=======
+>>>>>>> 80608ade0b3c0c8977683112cee6d311afc2f26b
+=======
+>>>>>>> 667c7d8bd7f0efadc7af9c28825fbd17743cd579
     let manager = CLLocationManager()
     
     func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
