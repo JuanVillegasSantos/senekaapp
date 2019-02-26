@@ -46,7 +46,7 @@ class ViewController: UIViewController,MKMapViewDelegate, UISearchBarDelegate {
         
         let searchRequest = MKLocalSearchRequest()
         searchRequest.naturalLanguageQuery = searchBar.text
-        let activeSearch = MKLocalSearch(request: searchRequest)
+        //let activeSearch = MKLocalSearch(request: searchRequest)
         
     }
     
@@ -57,8 +57,8 @@ class ViewController: UIViewController,MKMapViewDelegate, UISearchBarDelegate {
         let sourceLocation = CLLocationCoordinate2D(latitude:39.173209 , longitude: -94.593933)
         let destinationLocation = CLLocationCoordinate2D(latitude:38.643172 , longitude: -90.177429)
         
-        let sourcePin = customPin(pinTitle: "Kansas City", pinSubTitle: "", location: sourceLocation)
-        let destinationPin = customPin(pinTitle: "St. Louis", pinSubTitle: "", location: destinationLocation)
+        //let sourcePin = customPin(pinTitle: "Kansas City", pinSubTitle: "", location: sourceLocation)
+        //let destinationPin = customPin(pinTitle: "St. Louis", pinSubTitle: "", location: destinationLocation)
         //self.mapView.addAnnotation(sourcePin)
         //self.mapView.addAnnotation(destinationPin)
         
@@ -87,16 +87,10 @@ class ViewController: UIViewController,MKMapViewDelegate, UISearchBarDelegate {
         }
         
         //self.mapView.delegate = self
-        
-        
+    
+     print("Map View has loaded")
     }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
         renderer.strokeColor = UIColor.blue

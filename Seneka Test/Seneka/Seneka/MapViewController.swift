@@ -10,10 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController ,  CLLocationManagerDelegate{
+class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearchBarDelegate{
     
+
     @IBOutlet weak var map: MKMapView!
     //Map
+    
+    @IBAction func searchButtonMap(_ sender: Any)
+    {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        self.definesPresentationContext = true
+        present(searchController, animated: true, completion: nil)
+    }
     
     let manager = CLLocationManager()
     
@@ -26,9 +35,7 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate{
         let longitude=location.coordinate.longitude
         let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
-    
         map.setRegion(region, animated: true)
-        
         self.map.showsUserLocation=true
         print([latitude, longitude]) //latitud= latitude, logitud= logitude
     }
