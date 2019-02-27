@@ -37,8 +37,11 @@ class EmergencyFromMapViewController: UIViewController, UICollectionViewDataSour
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        
+        //Sets the title of the Navigation Bar
         navigationItem.title = "Seneka"
+        
+        //self.navigationController?.navigationBar.backItem = UIImageAsset(named: "BackButton.png")
+        //self.navigationController?.navigationBar.backItem?.title = "Back"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -46,21 +49,21 @@ class EmergencyFromMapViewController: UIViewController, UICollectionViewDataSour
         ]
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
+
     }
-    //Connects button to ViewController
-    
-    
-    @IBAction func FromEmerToMaps(_ sender: Any) {
-        print("Button pressed")
-        self.performSegue(withIdentifier: "FromEmerToMaps", sender: self)
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Sets the array of images displayed in the ViewController
         arrayOfEmergencies += [UIImage(named: "PoliceCallAsset.png")!, UIImage(named: "MedicalAsset.png")!, UIImage(named: "AirportSecAsset.png")!]
         arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
+        
+        //Sets the Back name in the Back Button of the Navigation Bar
+        //FUNCIONAnavigationController?.navigationBar.topItem?.title = "Back"
+        //Sets a BackButton for the Navigation Bar with a text standing "Back"
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         print ("Emergency View has loaded")
     }

@@ -12,7 +12,10 @@ import CoreLocation
 
 class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearchBarDelegate{
     
-
+    @IBAction func RequireButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "FromMapToRequire", sender: self)
+    }
+    
     @IBOutlet weak var map: MKMapView!
     //Map
     
@@ -24,10 +27,6 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         present(searchController, animated: true, completion: nil)
     }
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 667c7d8bd7f0efadc7af9c28825fbd17743cd579
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
     {
         //Ignoring users activity
@@ -69,11 +68,6 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         }
     }
     
-<<<<<<< HEAD
-=======
->>>>>>> 80608ade0b3c0c8977683112cee6d311afc2f26b
-=======
->>>>>>> 667c7d8bd7f0efadc7af9c28825fbd17743cd579
     let manager = CLLocationManager()
     
     func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
@@ -121,7 +115,7 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        
+        //Sets the title of Navigation Bar
         navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [

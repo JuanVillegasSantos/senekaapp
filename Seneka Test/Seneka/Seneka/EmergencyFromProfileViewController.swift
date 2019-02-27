@@ -37,7 +37,7 @@ class EmergencyFromProfileViewController: UIViewController, UICollectionViewData
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        
+        //Sets the title of the Navigation Bar as "Seneka"
         navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
@@ -53,12 +53,15 @@ class EmergencyFromProfileViewController: UIViewController, UICollectionViewData
         self.performSegue(withIdentifier: "FromEmerToProfile", sender: self)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Sets the array of images displayed in the ViewController
         arrayOfEmergencies += [UIImage(named: "PoliceCallAsset.png")!, UIImage(named: "MedicalAsset.png")!, UIImage(named: "AirportSecAsset.png")!]
         arrayOfIDs = ["Police", "HealthServices","AirportSecurity"]
+        //Sets a BackButton for the Navigation Bar with a text standing "Back"
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         print ("Emergency View has loaded")
     }

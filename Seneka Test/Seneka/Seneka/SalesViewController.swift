@@ -9,7 +9,6 @@ import UIKit
 //class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 class SalesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    
     var arrayOfStores = [UIImage]()
     var arrayOfIDs = ["Store1", "Store2",]
     
@@ -46,11 +45,6 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
         ]
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
-    }
-    //Connects button to ViewController
-    @IBAction func FromStoresToEmerButton(_ sender: Any) {
-        print("Emergency Button pressed")
-        self.performSegue(withIdentifier: "FromStoresToEmergencySergue", sender: self)
     }
     
     override func viewDidLoad() {
