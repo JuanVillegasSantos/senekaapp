@@ -7,29 +7,13 @@
 //
 import UIKit
 
-class RequireViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+class AirportSecViewController: UIViewController {
     
-    
-    var arrayOfStores = [UIImage]()
-    var arrayOfIDs = ["Store1", "Store2",]
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayOfStores.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = arrayOfStores[indexPath.row]
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let name = arrayOfIDs[indexPath.row]
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+    //Connects the button to call Airport Security line "123"
+    @IBAction func CallAirportSecButton(_ sender: UIButton) {
+        let url: NSURL = URL(string: "TEL://+5714397070")! as NSURL
+        UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -53,17 +37,17 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Sets the array of images displayed in the ViewController
-        arrayOfStores += [UIImage(named: "LuggageAsset.png")!, UIImage(named: "AirSecAsset.png")!, UIImage(named: "MigrationAsset.png")!, UIImage(named: "SpecialServiceAsset.png")!]
-        arrayOfIDs = ["Store1","Store2"]
-        //Sets a BackButton for the Navigation Bar with a text standing "Back"
+        //        //Sets the array of images displayed in the ViewController
+        //        arrayOfStores += [UIImage(named: "LuggageAsset.png")!, UIImage(named: "AirSecAsset.png")!, UIImage(named: "MigrationAsset.png")!, UIImage(named: "SpecialServiceAsset.png")!]
+        //        arrayOfIDs = ["Store1","Store2"]
+        //        //Sets a BackButton for the Navigation Bar with a text standing "Back"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         //Sets the title of the Navigation Bar
         navigationItem.title = "Seneka"
         
-        print ("Stores View has loaded")
+        print ("Airport Security View has loaded")
         
     }
 }

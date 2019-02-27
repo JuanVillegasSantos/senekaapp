@@ -7,29 +7,11 @@
 //
 import UIKit
 
-class RequireViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HealthServiceViewController: UIViewController {
     
-    
-    var arrayOfStores = [UIImage]()
-    var arrayOfIDs = ["Store1", "Store2",]
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayOfStores.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = arrayOfStores[indexPath.row]
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let name = arrayOfIDs[indexPath.row]
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+    @IBAction func MedicalCall(_ sender: UIButton) {
+        let url: NSURL = URL(string: "TEL://+573002221245")! as NSURL
+        UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -53,9 +35,10 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Sets the array of images displayed in the ViewController
-        arrayOfStores += [UIImage(named: "LuggageAsset.png")!, UIImage(named: "AirSecAsset.png")!, UIImage(named: "MigrationAsset.png")!, UIImage(named: "SpecialServiceAsset.png")!]
-        arrayOfIDs = ["Store1","Store2"]
+//        //Sets the array of images displayed in the ViewController
+//        arrayOfStores += [UIImage(named: "LuggageAsset.png")!, UIImage(named: "AirSecAsset.png")!, UIImage(named: "MigrationAsset.png")!, UIImage(named: "SpecialServiceAsset.png")!]
+//        arrayOfIDs = ["Store1","Store2"]
+        
         //Sets a BackButton for the Navigation Bar with a text standing "Back"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
@@ -63,7 +46,6 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
         //Sets the title of the Navigation Bar
         navigationItem.title = "Seneka"
         
-        print ("Stores View has loaded")
-        
+        print ("Health Service View has loaded")
     }
 }

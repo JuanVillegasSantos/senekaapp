@@ -22,6 +22,9 @@
 		F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D26221F3E4F003F0E15 /* RoundButton.swift */; };
 		F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */; };
 		F7CDADCE2225B21900361A34 /* RequireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADCD2225B21900361A34 /* RequireViewController.swift */; };
+		F7CDADD02226E36700361A34 /* PoliceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADCF2226E36700361A34 /* PoliceViewController.swift */; };
+		F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */; };
+		F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD32226E57700361A34 /* AirportSecViewController.swift */; };
 		F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		F7840D26221F3E4F003F0E15 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromStoresViewController.swift; sourceTree = "<group>"; };
 		F7CDADCD2225B21900361A34 /* RequireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireViewController.swift; sourceTree = "<group>"; };
+		F7CDADCF2226E36700361A34 /* PoliceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceViewController.swift; sourceTree = "<group>"; };
+		F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServiceViewController.swift; sourceTree = "<group>"; };
+		F7CDADD32226E57700361A34 /* AirportSecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSecViewController.swift; sourceTree = "<group>"; };
 		F7EE65C72220D2940089CB3E /* Seneka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Seneka.entitlements; sourceTree = "<group>"; };
 		F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,8 +142,11 @@
 				F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */,
 				F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */,
 				F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */,
-				F750672C21D11C1F00576499 /* Main.storyboard */,
 				F7CDADCD2225B21900361A34 /* RequireViewController.swift */,
+				F750672C21D11C1F00576499 /* Main.storyboard */,
+				F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */,
+				F7CDADD32226E57700361A34 /* AirportSecViewController.swift */,
+				F7CDADCF2226E36700361A34 /* PoliceViewController.swift */,
 				F750672F21D11C2000576499 /* Assets.xcassets */,
 				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
 				F750673421D11C2000576499 /* Info.plist */,
@@ -303,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */,
+				F7CDADD02226E36700361A34 /* PoliceViewController.swift in Sources */,
 				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
 				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
 				F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */,
@@ -311,6 +321,8 @@
 				F7CDADCE2225B21900361A34 /* RequireViewController.swift in Sources */,
 				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
 				F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */,
+				F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */,
+				F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */,
 				F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

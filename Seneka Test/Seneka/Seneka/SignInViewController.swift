@@ -21,9 +21,6 @@ class SignInViewController: UIViewController {
         
         print("View has loaded")
         
-        
     }
-
-
 }
 
