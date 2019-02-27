@@ -37,11 +37,6 @@ class EmergencyFromMapViewController: UIViewController, UICollectionViewDataSour
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        //Sets the title of the Navigation Bar
-        navigationItem.title = "Seneka"
-        
-        //self.navigationController?.navigationBar.backItem = UIImageAsset(named: "BackButton.png")
-        //self.navigationController?.navigationBar.backItem?.title = "Back"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -64,6 +59,8 @@ class EmergencyFromMapViewController: UIViewController, UICollectionViewDataSour
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        //Sets the title of the Navigation Bar
+        navigationItem.title = "Seneka"
         
         print ("Emergency View has loaded")
     }

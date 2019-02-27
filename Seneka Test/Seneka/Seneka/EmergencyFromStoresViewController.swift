@@ -42,8 +42,6 @@ class EmergencyFromStoresViewController: UIViewController, UICollectionViewDataS
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        //Sets the title of the navigation Bar
-        navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text and its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -64,6 +62,8 @@ class EmergencyFromStoresViewController: UIViewController, UICollectionViewDataS
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        //Sets the title of the navigation Bar
+        navigationItem.title = "Seneka"
         
         print ("Emergencies View has loaded")
     }

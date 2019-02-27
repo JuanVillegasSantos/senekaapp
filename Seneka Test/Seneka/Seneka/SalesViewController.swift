@@ -36,8 +36,6 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        //Adds a title to the Navigation Bar
-        navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -49,9 +47,11 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //Sets the array of images displayed in the ViewController
         arrayOfStores += [UIImage(named: "VeggieFoodAsset.png")!, UIImage(named: "CafeAsset.png")!, UIImage(named: "SouvenirAsset.png")!, UIImage(named: "JewerlyAsset.png")!, UIImage(named: "BarAsset.png")!, UIImage(named: "MoneyAsset.png")!, UIImage(named: "DutyAsset.png")!, UIImage(named: "CookiesAsset.png")!]
         arrayOfIDs = ["Store1","Store2"]
+        //Adds a title to the Navigation Bar
+        navigationItem.title = "Seneka"
         
         print ("Stores View has loaded")
         

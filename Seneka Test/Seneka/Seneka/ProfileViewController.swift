@@ -32,27 +32,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.performSegue(withIdentifier: "FromProfileToEmer", sender: self)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //Adds the assets to the Collection Controller
-        arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoLabelAsset.png")!, UIImage(named: "AgeAsset.png")!, UIImage(named: "GenderAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "IDNumberAsset.png")!, UIImage(named: "PassportNumberAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!, UIImage(named: "BloodTypeAsset.png")!, UIImage(named: "WeightAsset.png")!, UIImage(named: "HeightAsset.png")!, UIImage(named: "WhiteAsset.png")!]
-        
-        //arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!]
-        
-        arrayOfDataIDs = ["Store1","Store2"]
-        
-        print("Profile View has loaded")
-        
-    }
-    
     override func viewDidAppear(_ animated: Bool){
         
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
         
-        navigationItem.title = "Seneka"
+        //navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -60,6 +46,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         ]
         //Sets the color of the Navigation Bar
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        //Adds the assets to the Collection Controller
+        arrayOfData += [UIImage(named: "ProfileLineAsset.png")!, UIImage(named: "PersonalInfoLabelAsset.png")!, UIImage(named: "AgeAsset.png")!, UIImage(named: "GenderAsset.png")!, UIImage(named: "NationalityInfoAsset.png")!, UIImage(named: "IDNumberAsset.png")!, UIImage(named: "PassportNumberAsset.png")!, UIImage(named: "MedicalInfoAsset.png")!, UIImage(named: "BloodTypeAsset.png")!, UIImage(named: "WeightAsset.png")!, UIImage(named: "HeightAsset.png")!, UIImage(named: "WhiteAsset.png")!]
+        arrayOfDataIDs = ["Store1","Store2"]
+        //Sets the title of the Navigation Bar
+        navigationItem.title = "Seneka"
+        
+        print("Profile View has loaded")
     }
     
 }

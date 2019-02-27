@@ -37,8 +37,6 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        //Adds a title to the Navigation Bar
-        navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -62,6 +60,8 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        //Sets the title of the Navigation Bar
+        navigationItem.title = "Seneka"
         
         print ("Stores View has loaded")
         
