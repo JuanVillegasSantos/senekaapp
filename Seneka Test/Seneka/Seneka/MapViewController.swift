@@ -13,12 +13,53 @@ import CoreLocation
 
 class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearchBarDelegate{
     
+    let manager = CLLocationManager()
+    var location: CLLocation?
+    var isUpdatingLocation = false
+    var lastLocationError: Error?
+    @IBOutlet weak var map: MKMapView!
+    //Map
+    
+    @IBAction func findLocation()
+    {
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        if authorizationStatus == .notDetermined{
+            manager.requestWhenInUseAuthorization()
+            return
+        }
+        if authorizationStatus == .denied || authorizationStatus == .restricted{
+            reportLocationServiceDeniedError()
+            return
+        }
+        if isUpdatingLocation{
+            stopLocationManager()
+        }else{
+            location = nil
+            lastLocationError = nil
+            startLocationManager()
+        }
+    }
+    
+    func startLocationManager(){
+        if CLLocationManager.locationServicesEnabled(){
+            manager.delegate = self
+            manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            manager.startUpdatingLocation()
+            isUpdatingLocation = true
+        }
+    }
+    
+    func reportLocationServiceDeniedError()
+    {
+        let alert = UIAlertController(title: "Location Disabled", message: "Set Location", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert,animated: true,completion: nil)
+    }
+    
     @IBAction func RequireButton(_ sender: Any) {
         self.performSegue(withIdentifier: "FromMapToRequire", sender: self)
     }
-    
-    @IBOutlet weak var map: MKMapView!
-    //Map
     
     @IBAction func searchButtonMap(_ sender: Any)
     {
@@ -68,23 +109,6 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
             }
         }
     }
-    
-    let manager = CLLocationManager()
-    
-    //func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    //{
-      //  let location = locations[0]
-        
-      //  let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
-      //  let latitude=location.coordinate.latitude
-      //  let longitude=location.coordinate.longitude
-      //  let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-      //  let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
-      //  map.setRegion(region, animated: false)
-      //  self.map.showsUserLocation=true
-      //  print([latitude, longitude]) //latitud= latitude, logitud= logitude
-    //}
-    
     @IBAction func MapsEmergencyButton(_ sender: Any) {
         print("Emergency Button pressed")
         self.performSegue(withIdentifier: "FromMapsToEmergency", sender: self)

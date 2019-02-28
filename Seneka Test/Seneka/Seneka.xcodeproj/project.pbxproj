@@ -126,7 +126,6 @@
 				8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */,
 				605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

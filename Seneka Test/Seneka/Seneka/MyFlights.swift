@@ -44,7 +44,7 @@ class MyFlightsViewController: UIViewController, UICollectionViewDataSource, UIC
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //Adds the assets to the Collection Controller
-        arrayOfData += [UIImage(named: "CurrentFlightsAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "FinishedFlightsAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "BogTouAsset.png")!]
+        arrayOfData += [UIImage(named: "CurrentFlightsAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "FinishedFlightsAsset.png")!, UIImage(named: "CtgBogAsset.png")!, UIImage(named: "BogCtgAsset.png")!, UIImage(named: "FloBogAsset.png")!]
         //Sets a BackButton for the Navigation Bar with a text standing "Back"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
