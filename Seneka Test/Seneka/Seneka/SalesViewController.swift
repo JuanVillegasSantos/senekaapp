@@ -6,11 +6,11 @@
 //  Copyright © 2018 Seneka Inc. All rights reserved.
 //
 import UIKit
-//class SalesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+
 class SalesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var arrayOfStores = [UIImage]()
-    var arrayOfIDs = ["Store1", "Store2",]
+    var arrayOfIDs = ["Store1", "Store2"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfStores.count
@@ -56,5 +56,4 @@ class SalesViewController: UIViewController, UICollectionViewDataSource, UIColle
         print ("Stores View has loaded")
         
     }
-    
 }

@@ -25,6 +25,8 @@
 		F7CDADD02226E36700361A34 /* PoliceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADCF2226E36700361A34 /* PoliceViewController.swift */; };
 		F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */; };
 		F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD32226E57700361A34 /* AirportSecViewController.swift */; };
+		F7CDADD62227540F00361A34 /* PassengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD52227540F00361A34 /* PassengerViewController.swift */; };
+		F7CDADD82227658B00361A34 /* MyFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD72227658B00361A34 /* MyFlights.swift */; };
 		F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		F7CDADCF2226E36700361A34 /* PoliceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceViewController.swift; sourceTree = "<group>"; };
 		F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServiceViewController.swift; sourceTree = "<group>"; };
 		F7CDADD32226E57700361A34 /* AirportSecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSecViewController.swift; sourceTree = "<group>"; };
+		F7CDADD52227540F00361A34 /* PassengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerViewController.swift; sourceTree = "<group>"; };
+		F7CDADD72227658B00361A34 /* MyFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlights.swift; sourceTree = "<group>"; };
 		F7EE65C72220D2940089CB3E /* Seneka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Seneka.entitlements; sourceTree = "<group>"; };
 		F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +148,8 @@
 				F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */,
 				F7CDADCD2225B21900361A34 /* RequireViewController.swift */,
 				F750672C21D11C1F00576499 /* Main.storyboard */,
+				F7CDADD72227658B00361A34 /* MyFlights.swift */,
+				F7CDADD52227540F00361A34 /* PassengerViewController.swift */,
 				F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */,
 				F7CDADD32226E57700361A34 /* AirportSecViewController.swift */,
 				F7CDADCF2226E36700361A34 /* PoliceViewController.swift */,
@@ -322,8 +328,10 @@
 				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
 				F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */,
 				F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */,
+				F7CDADD82227658B00361A34 /* MyFlights.swift in Sources */,
 				F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */,
 				F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */,
+				F7CDADD62227540F00361A34 /* PassengerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

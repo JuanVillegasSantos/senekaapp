@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class MyFlightsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var arrayOfData = [UIImage]()
-    var arrayOfIDs = ["PassengerInfo", "MyFlights"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfData.count
@@ -27,19 +26,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let name = arrayOfIDs[indexPath.row]
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
-        self.navigationController?.pushViewController(viewController!, animated: true)
-    }
-    
     override func viewDidAppear(_ animated: Bool){
         
         //Adds a navigation Bar to the top of the screen
         _ = self.navigationController?.navigationBar
         navigationController?.navigationBar.isTranslucent = false
-        
-        //navigationItem.title = "Seneka"
         //Sets the color of the Navigation Bar text its font type
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -53,12 +44,14 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //Adds the assets to the Collection Controller
-        arrayOfData += [UIImage(named: "PersonalDigitalAsset.png")!, UIImage(named: "MyFlightsAsset.png")!]
-        arrayOfIDs = ["PassengerInfo", "MyFlights"]
+        arrayOfData += [UIImage(named: "CurrentFlightsAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "FinishedFlightsAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "BogTouAsset.png")!, UIImage(named: "BogTouAsset.png")!]
+        //Sets a BackButton for the Navigation Bar with a text standing "Back"
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         //Sets the title of the Navigation Bar
         navigationItem.title = "Seneka"
         
         print("Profile View has loaded")
     }
-    
 }
