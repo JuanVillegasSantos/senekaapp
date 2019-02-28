@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
+		93D42570222750C6003F29FC /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 93D4256F222750C6003F29FC /* PodFile */; };
 		93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F40CB5221E2C2F0014D60B /* MapViewController.swift */; };
 		93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F40CBB221E3BE50014D60B /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C8465DCBA232016BA0B723EA /* libPods-Seneka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */; };
 		F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */; };
 		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
 		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seneka.release.xcconfig"; path = "Target Support Files/Pods-Seneka/Pods-Seneka.release.xcconfig"; sourceTree = "<group>"; };
+		800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Seneka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seneka.debug.xcconfig"; path = "Target Support Files/Pods-Seneka/Pods-Seneka.debug.xcconfig"; sourceTree = "<group>"; };
+		93D4256F222750C6003F29FC /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		93F40CB5221E2C2F0014D60B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		93F40CBB221E3BE50014D60B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */,
+				C8465DCBA232016BA0B723EA /* libPods-Seneka.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,18 +111,31 @@
 			isa = PBXGroup;
 			children = (
 				93F40CBB221E3BE50014D60B /* CoreLocation.framework */,
+				800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		953B7A975EA19C7AFD75F9BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */,
+				605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F750671C21D11C1F00576499 = {
 			isa = PBXGroup;
 			children = (
+				93D4256F222750C6003F29FC /* PodFile */,
 				F750672721D11C1F00576499 /* Seneka */,
 				F750673C21D11C2000576499 /* SenekaTests */,
 				F750674721D11C2000576499 /* SenekaUITests */,
 				F750672621D11C1F00576499 /* Products */,
 				93F40CBA221E3BE50014D60B /* Frameworks */,
+				953B7A975EA19C7AFD75F9BA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F750674D21D11C2000576499 /* Build configuration list for PBXNativeTarget "Seneka" */;
 			buildPhases = (
+				D3D8FCDA551FEB8546E18388 /* [CP] Check Pods Manifest.lock */,
 				F750672121D11C1F00576499 /* Sources */,
 				F750672221D11C1F00576499 /* Frameworks */,
 				F750672321D11C1F00576499 /* Resources */,
+				784668EC44FEA88A0567C7C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,6 +308,7 @@
 			files = (
 				9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */,
 				F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */,
+				93D42570222750C6003F29FC /* PodFile in Resources */,
 				F750673021D11C2000576499 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +328,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		784668EC44FEA88A0567C7C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seneka/Pods-Seneka-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Seneka/Pods-Seneka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D8FCDA551FEB8546E18388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Seneka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F750672121D11C1F00576499 /* Sources */ = {
@@ -496,6 +568,7 @@
 		};
 		F750674E21D11C2000576499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +587,7 @@
 		};
 		F750674F21D11C2000576499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
