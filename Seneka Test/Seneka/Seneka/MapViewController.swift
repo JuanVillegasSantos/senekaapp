@@ -75,14 +75,14 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
     //{
       //  let location = locations[0]
         
-       // let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
-        //let latitude=location.coordinate.latitude
-        //let longitude=location.coordinate.longitude
-        //let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        //let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
-        //map.setRegion(region, animated: false)
-        //self.map.showsUserLocation=true
-        //print([latitude, longitude]) //latitud= latitude, logitud= logitude
+      //  let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
+      //  let latitude=location.coordinate.latitude
+      //  let longitude=location.coordinate.longitude
+      //  let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+      //  let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
+      //  map.setRegion(region, animated: false)
+      //  self.map.showsUserLocation=true
+      //  print([latitude, longitude]) //latitud= latitude, logitud= logitude
     //}
     
     @IBAction func MapsEmergencyButton(_ sender: Any) {
@@ -129,8 +129,7 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
-        
-        
+
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
