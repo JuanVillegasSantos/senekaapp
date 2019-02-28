@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
 import CoreLocation
 
 class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearchBarDelegate{
@@ -70,19 +71,19 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
     
     let manager = CLLocationManager()
     
-    func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
-        let location = locations[0]
+    //func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    //{
+      //  let location = locations[0]
         
-        let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
-        let latitude=location.coordinate.latitude
-        let longitude=location.coordinate.longitude
-        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
-        map.setRegion(region, animated: true)
-        self.map.showsUserLocation=true
-        print([latitude, longitude]) //latitud= latitude, logitud= logitude
-    }
+      //  let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
+      //  let latitude=location.coordinate.latitude
+      //  let longitude=location.coordinate.longitude
+      //  let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+      //  let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
+      //  map.setRegion(region, animated: false)
+      //  self.map.showsUserLocation=true
+      //  print([latitude, longitude]) //latitud= latitude, logitud= logitude
+    //}
     
     @IBAction func MapsEmergencyButton(_ sender: Any) {
         print("Emergency Button pressed")
@@ -113,9 +114,22 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 100/225, green: 197/255, blue: 213/255, alpha: 1)
     }
     
-    override func viewDidLoad(){
+    override func viewDidLoad()
+    {
+        
         super.viewDidLoad()
         
+        GMSServices.provideAPIKey("AIzaSyBSVeHyh9xhJ3FzFbtVKO8aMmAywEeFce4")
+        let camera = GMSCameraPosition.camera(withLatitude: 4.697428, longitude: -74.140480, zoom: 18)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 4.697428, longitude: -74.140480)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
+
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
@@ -126,6 +140,7 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         
         print("Map View has loaded")
     }
+    
     
 }
 
