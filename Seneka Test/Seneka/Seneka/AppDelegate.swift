@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,13 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        Thread.sleep(forTimeInterval: 1.0) //adds 1 second to launch time
+        //adds 1 second to launch time
+        Thread.sleep(forTimeInterval: 1.0)
+        //Asks for permission for notifications to show up
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
         return true
-    
-        
-        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

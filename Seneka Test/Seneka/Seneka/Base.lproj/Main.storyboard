@@ -800,6 +800,27 @@
             </objects>
             <point key="canvasLocation" x="4670" y="-84"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="y4g-ep-4MF">
+            <objects>
+                <viewController storyboardIdentifier="Notification" id="rNA-zl-i0Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elz-kV-ygk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="App Alert" translatesAutoresizingMaskIntoConstraints="NO" id="cRc-u7-Pcd">
+                                <rect key="frame" x="0.0" y="95" width="375" height="637"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GBq-cV-Dfx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYr-sJ-IAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6205.6000000000004" y="-84.236453201970448"/>
+        </scene>
         <!--Health Service View Controller-->
         <scene sceneID="cAI-9Y-Nvo">
             <objects>
@@ -866,6 +887,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="App Alert" width="293" height="497"/>
         <image name="CallAirSecAsset" width="770" height="197"/>
         <image name="CallPoliceAsset" width="710" height="182"/>
         <image name="InfoAsset" width="75" height="75"/>

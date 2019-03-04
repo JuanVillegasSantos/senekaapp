@@ -11,7 +11,7 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
     
     
     var arrayOfStores = [UIImage]()
-    var arrayOfIDs = ["Store1", "Store2",]
+    var arrayOfIDs = ["Store1", "Notification",]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfStores.count
@@ -55,7 +55,8 @@ class RequireViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         //Sets the array of images displayed in the ViewController
         arrayOfStores += [UIImage(named: "LuggageAsset.png")!, UIImage(named: "AirSecAsset.png")!, UIImage(named: "MigrationAsset.png")!, UIImage(named: "SpecialServiceAsset.png")!]
-        arrayOfIDs = ["Store1","Store2"]
+        //Sets the array of images as buttons.
+        arrayOfIDs = ["Store1","Notification"]
         //Sets a BackButton for the Navigation Bar with a text standing "Back"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"

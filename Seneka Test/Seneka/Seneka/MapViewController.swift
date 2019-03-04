@@ -32,7 +32,7 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
             return
         }
         if isUpdatingLocation{
-            stopLocationManager()
+            //stopLocationManager()
         }else{
             location = nil
             lastLocationError = nil
