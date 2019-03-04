@@ -15,38 +15,33 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
     
     let manager = CLLocationManager()
     var location: CLLocation?
-    var isUpdatingLocation = false
-    var lastLocationError: Error?
+    //var isUpdatingLocation = false
+    //var lastLocationError: Error?
+    
+    @IBOutlet weak var myView: UIView!
     @IBOutlet weak var map: MKMapView!
-    //Map
+    //Map_iOS, for searching
     
-    @IBAction func findLocation()
+    func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
-        let authorizationStatus = CLLocationManager.authorizationStatus()
-        if authorizationStatus == .notDetermined{
-            manager.requestWhenInUseAuthorization()
-            return
-        }
-        if authorizationStatus == .denied || authorizationStatus == .restricted{
-            reportLocationServiceDeniedError()
-            return
-        }
-        if isUpdatingLocation{
-            //stopLocationManager()
-        }else{
-            location = nil
-            lastLocationError = nil
-            startLocationManager()
-        }
-    }
-    
-    func startLocationManager(){
-        if CLLocationManager.locationServicesEnabled(){
-            manager.delegate = self
-            manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-            manager.startUpdatingLocation()
-            isUpdatingLocation = true
-        }
+        let location = locations[0]
+        
+        //let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
+        let latitude=location.coordinate.latitude
+        let longitude=location.coordinate.longitude
+        //let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        //let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
+        //map.setRegion(region, animated: true)
+        //self.map.showsUserLocation=true
+        print([latitude, longitude]) //latitud= latitude, logitud= logitude
+        
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 18)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        marker.map = mapView
     }
     
     func reportLocationServiceDeniedError()
@@ -144,18 +139,9 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
         super.viewDidLoad()
         
         GMSServices.provideAPIKey("AIzaSyBSVeHyh9xhJ3FzFbtVKO8aMmAywEeFce4")
-        let camera = GMSCameraPosition.camera(withLatitude: 4.697428, longitude: -74.140480, zoom: 18)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 4.697428, longitude: -74.140480)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-
         manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
