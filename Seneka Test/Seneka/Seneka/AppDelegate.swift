@@ -14,16 +14,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     var window: UIWindow?
     
+    //Enables the token requiered for Push Notifications in the App
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("token :\(deviceToken)")
+    }
+    //Enables an answer in case the Push Notification fails
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        
+    }
+    //Enables the Notification to show inside the App
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert, .sound, .badge])
     }
-    
+    //Sets a function that allows notifications with an identifier name to get inside the app when activated
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
 
         if response.notification.request.identifier == "TestNotification" {
             print("handling notification with the identifier 'TestNotification'")
         }
-        
         completionHandler()
     }
 
@@ -35,6 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         //Asks for permission for notifications to show up
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
+        UIApplication.shared.registerForRemoteNotifications()
+        
         return true
     }
 
