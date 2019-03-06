@@ -60,8 +60,8 @@ class MyFlightsViewController: UIViewController, UICollectionViewDataSource, UIC
         content.body = "New GATE 85"
         content.badge = 1
         content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        //Sets the time to display the notification since the button My Flights is pressed"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         let request = UNNotificationRequest(identifier: "TestNotification", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
