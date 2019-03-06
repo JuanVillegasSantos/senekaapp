@@ -25,23 +25,18 @@ class MapViewController: UIViewController ,  CLLocationManagerDelegate, UISearch
     func  locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let location = locations[0]
-        
-        //let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.002,longitudeDelta: 0.002)
+ 
         let latitude=location.coordinate.latitude
         let longitude=location.coordinate.longitude
-        //let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        //let region: MKCoordinateRegion=MKCoordinateRegion.init(center: myLocation, span: span)
-        //map.setRegion(region, animated: true)
-        //self.map.showsUserLocation=true
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+
         print([latitude, longitude]) //latitud= latitude, logitud= logitude
         
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 18)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
+        mapView.isMyLocationEnabled = true
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        marker.map = mapView
     }
     
     func reportLocationServiceDeniedError()
