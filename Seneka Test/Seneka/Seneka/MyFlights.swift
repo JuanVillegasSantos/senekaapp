@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class MyFlightsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -51,6 +52,19 @@ class MyFlightsViewController: UIViewController, UICollectionViewDataSource, UIC
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         //Sets the title of the Navigation Bar
         navigationItem.title = "Seneka"
+        
+        //Sets a Notification inside MyFlights View Controller
+        let content = UNMutableNotificationContent()
+        content.title = "Updated Status for your flight AF 0429:"
+        //content.subtitle = "for your flight AF 0429:"
+        content.body = "New GATE 85"
+        content.badge = 1
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "TestNotification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
         print("Profile View has loaded")
     }
