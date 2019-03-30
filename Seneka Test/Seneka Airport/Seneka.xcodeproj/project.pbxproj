@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750672C21D11C1F00576499 /* Main.storyboard */; };
+		93D42570222750C6003F29FC /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 93D4256F222750C6003F29FC /* PodFile */; };
+		93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F40CB5221E2C2F0014D60B /* MapViewController.swift */; };
+		93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F40CBB221E3BE50014D60B /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C8465DCBA232016BA0B723EA /* libPods-Seneka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */; };
+		F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */; };
+		F750672921D11C1F00576499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672821D11C1F00576499 /* AppDelegate.swift */; };
+		F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750672A21D11C1F00576499 /* SignInViewController.swift */; };
+		F750673021D11C2000576499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F750672F21D11C2000576499 /* Assets.xcassets */; };
+		F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F750673121D11C2000576499 /* LaunchScreen.storyboard */; };
+		F750673E21D11C2000576499 /* SenekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750673D21D11C2000576499 /* SenekaTests.swift */; };
+		F750674921D11C2000576499 /* SenekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750674821D11C2000576499 /* SenekaUITests.swift */; };
+		F750675921D6C2A800576499 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750675821D6C2A800576499 /* SalesViewController.swift */; };
+		F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */; };
+		F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D26221F3E4F003F0E15 /* RoundButton.swift */; };
+		F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */; };
+		F7CDADCE2225B21900361A34 /* RequireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADCD2225B21900361A34 /* RequireViewController.swift */; };
+		F7CDADD02226E36700361A34 /* PoliceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADCF2226E36700361A34 /* PoliceViewController.swift */; };
+		F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */; };
+		F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD32226E57700361A34 /* AirportSecViewController.swift */; };
+		F7CDADD62227540F00361A34 /* PassengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD52227540F00361A34 /* PassengerViewController.swift */; };
+		F7CDADD82227658B00361A34 /* MyFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CDADD72227658B00361A34 /* MyFlights.swift */; };
+		F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F750673A21D11C2000576499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F750671D21D11C1F00576499 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F750672421D11C1F00576499;
+			remoteInfo = Seneka;
+		};
+		F750674521D11C2000576499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F750671D21D11C1F00576499 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F750672421D11C1F00576499;
+			remoteInfo = Seneka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seneka.release.xcconfig"; path = "Target Support Files/Pods-Seneka/Pods-Seneka.release.xcconfig"; sourceTree = "<group>"; };
+		800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Seneka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seneka.debug.xcconfig"; path = "Target Support Files/Pods-Seneka/Pods-Seneka.debug.xcconfig"; sourceTree = "<group>"; };
+		93D4256F222750C6003F29FC /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		93F40CB5221E2C2F0014D60B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		93F40CBB221E3BE50014D60B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F750672521D11C1F00576499 /* Seneka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seneka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F750672821D11C1F00576499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F750672A21D11C1F00576499 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F750672D21D11C1F00576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F750672F21D11C2000576499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F750673221D11C2000576499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F750673421D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F750673921D11C2000576499 /* SenekaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenekaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F750673D21D11C2000576499 /* SenekaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaTests.swift; sourceTree = "<group>"; };
+		F750673F21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F750674421D11C2000576499 /* SenekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SenekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F750674821D11C2000576499 /* SenekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenekaUITests.swift; sourceTree = "<group>"; };
+		F750674A21D11C2000576499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F750675821D6C2A800576499 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
+		F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromMapViewController.swift; sourceTree = "<group>"; };
+		F7840D26221F3E4F003F0E15 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromStoresViewController.swift; sourceTree = "<group>"; };
+		F7CDADCD2225B21900361A34 /* RequireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireViewController.swift; sourceTree = "<group>"; };
+		F7CDADCF2226E36700361A34 /* PoliceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceViewController.swift; sourceTree = "<group>"; };
+		F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServiceViewController.swift; sourceTree = "<group>"; };
+		F7CDADD32226E57700361A34 /* AirportSecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSecViewController.swift; sourceTree = "<group>"; };
+		F7CDADD52227540F00361A34 /* PassengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerViewController.swift; sourceTree = "<group>"; };
+		F7CDADD72227658B00361A34 /* MyFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlights.swift; sourceTree = "<group>"; };
+		F7EE65C72220D2940089CB3E /* Seneka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Seneka.entitlements; sourceTree = "<group>"; };
+		F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyFromProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F750672221D11C1F00576499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F40CBC221E3BE50014D60B /* CoreLocation.framework in Frameworks */,
+				C8465DCBA232016BA0B723EA /* libPods-Seneka.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750673621D11C2000576499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750674121D11C2000576499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93F40CBA221E3BE50014D60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93F40CBB221E3BE50014D60B /* CoreLocation.framework */,
+				800FBE1EF5DB32B202F133C0 /* libPods-Seneka.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		953B7A975EA19C7AFD75F9BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */,
+				605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F750671C21D11C1F00576499 = {
+			isa = PBXGroup;
+			children = (
+				93D4256F222750C6003F29FC /* PodFile */,
+				F750672721D11C1F00576499 /* Seneka */,
+				F750673C21D11C2000576499 /* SenekaTests */,
+				F750674721D11C2000576499 /* SenekaUITests */,
+				F750672621D11C1F00576499 /* Products */,
+				93F40CBA221E3BE50014D60B /* Frameworks */,
+				953B7A975EA19C7AFD75F9BA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F750672621D11C1F00576499 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F750672521D11C1F00576499 /* Seneka.app */,
+				F750673921D11C2000576499 /* SenekaTests.xctest */,
+				F750674421D11C2000576499 /* SenekaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F750672721D11C1F00576499 /* Seneka */ = {
+			isa = PBXGroup;
+			children = (
+				F7EE65C72220D2940089CB3E /* Seneka.entitlements */,
+				F750672821D11C1F00576499 /* AppDelegate.swift */,
+				F750672A21D11C1F00576499 /* SignInViewController.swift */,
+				F750675821D6C2A800576499 /* SalesViewController.swift */,
+				93F40CB5221E2C2F0014D60B /* MapViewController.swift */,
+				F73B5F1C221ECFE2007D2F5D /* ProfileViewController.swift */,
+				F7840D26221F3E4F003F0E15 /* RoundButton.swift */,
+				F7840D32221F9738003F0E15 /* EmergencyFromStoresViewController.swift */,
+				F7769B2B22206D5C00D80274 /* EmergencyFromMapViewController.swift */,
+				F7EE65CA2220D6740089CB3E /* EmergencyFromProfileViewController.swift */,
+				F7CDADCD2225B21900361A34 /* RequireViewController.swift */,
+				F750672C21D11C1F00576499 /* Main.storyboard */,
+				F7CDADD72227658B00361A34 /* MyFlights.swift */,
+				F7CDADD52227540F00361A34 /* PassengerViewController.swift */,
+				F7CDADD12226E52900361A34 /* HealthServiceViewController.swift */,
+				F7CDADD32226E57700361A34 /* AirportSecViewController.swift */,
+				F7CDADCF2226E36700361A34 /* PoliceViewController.swift */,
+				F750672F21D11C2000576499 /* Assets.xcassets */,
+				F750673121D11C2000576499 /* LaunchScreen.storyboard */,
+				F750673421D11C2000576499 /* Info.plist */,
+			);
+			path = Seneka;
+			sourceTree = "<group>";
+		};
+		F750673C21D11C2000576499 /* SenekaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F750673D21D11C2000576499 /* SenekaTests.swift */,
+				F750673F21D11C2000576499 /* Info.plist */,
+			);
+			path = SenekaTests;
+			sourceTree = "<group>";
+		};
+		F750674721D11C2000576499 /* SenekaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F750674821D11C2000576499 /* SenekaUITests.swift */,
+				F750674A21D11C2000576499 /* Info.plist */,
+			);
+			path = SenekaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F750672421D11C1F00576499 /* Seneka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F750674D21D11C2000576499 /* Build configuration list for PBXNativeTarget "Seneka" */;
+			buildPhases = (
+				D3D8FCDA551FEB8546E18388 /* [CP] Check Pods Manifest.lock */,
+				F750672121D11C1F00576499 /* Sources */,
+				F750672221D11C1F00576499 /* Frameworks */,
+				F750672321D11C1F00576499 /* Resources */,
+				784668EC44FEA88A0567C7C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seneka;
+			productName = Seneka;
+			productReference = F750672521D11C1F00576499 /* Seneka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F750673821D11C2000576499 /* SenekaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F750675021D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaTests" */;
+			buildPhases = (
+				F750673521D11C2000576499 /* Sources */,
+				F750673621D11C2000576499 /* Frameworks */,
+				F750673721D11C2000576499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F750673B21D11C2000576499 /* PBXTargetDependency */,
+			);
+			name = SenekaTests;
+			productName = SenekaTests;
+			productReference = F750673921D11C2000576499 /* SenekaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F750674321D11C2000576499 /* SenekaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F750675321D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaUITests" */;
+			buildPhases = (
+				F750674021D11C2000576499 /* Sources */,
+				F750674121D11C2000576499 /* Frameworks */,
+				F750674221D11C2000576499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F750674621D11C2000576499 /* PBXTargetDependency */,
+			);
+			name = SenekaUITests;
+			productName = SenekaUITests;
+			productReference = F750674421D11C2000576499 /* SenekaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F750671D21D11C1F00576499 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Seneka Inc.";
+				TargetAttributes = {
+					F750672421D11C1F00576499 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					F750673821D11C2000576499 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F750672421D11C1F00576499;
+					};
+					F750674321D11C2000576499 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F750672421D11C1F00576499;
+					};
+				};
+			};
+			buildConfigurationList = F750672021D11C1F00576499 /* Build configuration list for PBXProject "Seneka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F750671C21D11C1F00576499;
+			productRefGroup = F750672621D11C1F00576499 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F750672421D11C1F00576499 /* Seneka */,
+				F750673821D11C2000576499 /* SenekaTests */,
+				F750674321D11C2000576499 /* SenekaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F750672321D11C1F00576499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9376AAF1220BB5B30034EAD0 /* Main.storyboard in Resources */,
+				F750673321D11C2000576499 /* LaunchScreen.storyboard in Resources */,
+				93D42570222750C6003F29FC /* PodFile in Resources */,
+				F750673021D11C2000576499 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750673721D11C2000576499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750674221D11C2000576499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		784668EC44FEA88A0567C7C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Seneka/Pods-Seneka-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Seneka/Pods-Seneka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D8FCDA551FEB8546E18388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Seneka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F750672121D11C1F00576499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7840D27221F3E4F003F0E15 /* RoundButton.swift in Sources */,
+				F7CDADD02226E36700361A34 /* PoliceViewController.swift in Sources */,
+				F750672B21D11C1F00576499 /* SignInViewController.swift in Sources */,
+				F750672921D11C1F00576499 /* AppDelegate.swift in Sources */,
+				F73B5F1D221ECFE2007D2F5D /* ProfileViewController.swift in Sources */,
+				F7840D33221F9738003F0E15 /* EmergencyFromStoresViewController.swift in Sources */,
+				F750675921D6C2A800576499 /* SalesViewController.swift in Sources */,
+				F7CDADCE2225B21900361A34 /* RequireViewController.swift in Sources */,
+				93F40CB6221E2C2F0014D60B /* MapViewController.swift in Sources */,
+				F7769B2C22206D5C00D80274 /* EmergencyFromMapViewController.swift in Sources */,
+				F7CDADD42226E57700361A34 /* AirportSecViewController.swift in Sources */,
+				F7CDADD82227658B00361A34 /* MyFlights.swift in Sources */,
+				F7CDADD22226E52900361A34 /* HealthServiceViewController.swift in Sources */,
+				F7EE65CB2220D6740089CB3E /* EmergencyFromProfileViewController.swift in Sources */,
+				F7CDADD62227540F00361A34 /* PassengerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750673521D11C2000576499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F750673E21D11C2000576499 /* SenekaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F750674021D11C2000576499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F750674921D11C2000576499 /* SenekaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F750673B21D11C2000576499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F750672421D11C1F00576499 /* Seneka */;
+			targetProxy = F750673A21D11C2000576499 /* PBXContainerItemProxy */;
+		};
+		F750674621D11C2000576499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F750672421D11C1F00576499 /* Seneka */;
+			targetProxy = F750674521D11C2000576499 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F750672C21D11C1F00576499 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F750672D21D11C1F00576499 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F750673121D11C2000576499 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F750673221D11C2000576499 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F750674B21D11C2000576499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F750674C21D11C2000576499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F750674E21D11C2000576499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB81815A174A8F3DEF90800 /* Pods-Seneka.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADARLC8T7J;
+				INFOPLIST_FILE = Seneka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.Seneka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F750674F21D11C2000576499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605A772E935CA85C5AA72774 /* Pods-Seneka.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADARLC8T7J;
+				INFOPLIST_FILE = Seneka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.Seneka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F750675121D11C2000576499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenekaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seneka.app/Seneka";
+			};
+			name = Debug;
+		};
+		F750675221D11C2000576499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenekaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seneka.app/Seneka";
+			};
+			name = Release;
+		};
+		F750675421D11C2000576499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Seneka;
+			};
+			name = Debug;
+		};
+		F750675521D11C2000576499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SenekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SMS.SenekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Seneka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F750672021D11C1F00576499 /* Build configuration list for PBXProject "Seneka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F750674B21D11C2000576499 /* Debug */,
+				F750674C21D11C2000576499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F750674D21D11C2000576499 /* Build configuration list for PBXNativeTarget "Seneka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F750674E21D11C2000576499 /* Debug */,
+				F750674F21D11C2000576499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F750675021D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F750675121D11C2000576499 /* Debug */,
+				F750675221D11C2000576499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F750675321D11C2000576499 /* Build configuration list for PBXNativeTarget "SenekaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F750675421D11C2000576499 /* Debug */,
+				F750675521D11C2000576499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F750671D21D11C1F00576499 /* Project object */;
+}
